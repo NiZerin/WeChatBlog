@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/blog/blog",
+    "pages/git/git",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Zerin小程序简历",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "tImg/shouyetianchong.png",
+        "iconPath": "tImg/shouye.png",
+        "pagePath": "pages/blog/blog",
+        "text": "博客"
+      },
+      {
+        "selectedIconPath": "tImg/jiaxingshoucangtianchong.png",
+        "iconPath": "tImg/jiaxingshoucang.png",
+        "pagePath": "pages/index/index",
+        "text": "简历"
+      },
+      {
+        "selectedIconPath": "tImg/yonghutianchong.png",
+        "iconPath": "tImg/yonghu.png",
+        "pagePath": "pages/git/git",
+        "text": "履历"
+      }
+    ]
+  }
+}

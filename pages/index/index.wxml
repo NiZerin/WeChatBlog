@@ -1,0 +1,110 @@
+<view class='body'>
+  <view class='top'>
+    <image mode='widthFix'class='topImg'src="https://cdn.iacblog.com/wx/material-17.png">
+    </image>
+  </view>
+  <view class='main'>
+    <image class='photo' src='https://cdn.iacblog.com/wx/photo.png'></image>
+    <text class='mainText'>I am Zerin</text>
+      <block wx:for="{{mH}}" data-item="item" wx:for-index="idx" wx:key="">
+        <text class='mH'>{{item}}</text>
+      </block> 
+    <view class='mLj'>
+      <h2>快速了解</h2>
+    </view>
+    <view class='mI'>
+      <ul class='mInfo'>
+      <block wx:for="{{mInfo}}" data-item="item" wx:for-index="idx" wx:key="">
+        <li>{{item}}</li>
+      </block>  
+      </ul>
+      <text>基础扎实，学东西快，脑子灵活。十岁开始学习 Pascal 语言参加信息学奥赛；后自学 C 和 C++，初中获得株洲市竞赛第一名，对常见数据结构与算法有过系统性学习；高中毕业专注于软件开发。</text>
+      <text>接触面广泛，擅长独立解决问题。早期从事 HTTP 协议抓包分析和 MFC 开发，之后转型服务端，自学 PHP / .NET Core / Swoole 等</text>
+      <text>喜欢团队分工合作，善于沟通。</text>
+      <text>热爱技术，善于钻研，轻微强迫症，做事追求极致优雅，享受写代码带来的成就感。</text>
+      <text>目前，后端（Back-End） 是我的强项；努力成为 T 型人才，是我的目标。</text>
+    </view>
+    <view class='mLj'>
+      <h2>我的作品</h2>
+    </view>
+    <view class='mI'>
+      <ul class='mInfo'>
+        <li><strong>Github：</strong> <a href="https://github.com/CrazyNing98">github.com/CrazyNing98</a>
+        </li>
+        <li><strong>Laravel-China：</strong> <a href="https://laravel-china.org/users/32812">laravel-china.org/users/32812</a>
+        </li>
+        <li><strong>掘金：</strong> <a href="https://juejin.im/user/5ba7b03be51d450e865809ff">juejin.im/user/5ba7b03be51d450e865809ff</a>
+        </li> 
+      </ul>
+    </view>
+    <view class='mLj'>
+      <h2>我的优势</h2>
+    </view>
+    <view class='mI'>
+      <ul class='mInfo'>
+        <li>日常 <code>macOS</code> 开发；命令行狂热爱好者，日常 <code>Git</code>、                     <code>Bash</code>、<code>Zsh</code>、<code>SCP</code>、<code>Rsync</code>、                 <code>Docker</code> 等；折腾过路由器固件、树莓派、黑群晖、黑苹果，熟悉                          <code>Ubuntu</code>、<code>Debian</code> 常用操作。
+        </li>
+        <li>熟悉 <code>Nginx</code> 和 <code>Tengine</code>，可手搭 <code>Nginx</code> + <code>PHP-FPM</code> 生产环境。
+        </li>
+        <li>熟悉 <code>MySQL</code>、<code>MariaDB</code>，了解常见的性能调优方法，熟悉主流 GUI 管理工具 <code>Navicat</code>、<code>Adminer</code>。
+        </li>
+        <li><code>PHP</code> 狂热爱好者，熟练使用<code>Composer</code>、<code>PHPize</code>、<code>PECL</code>，熟悉 PHP 版本差异、PHPUnit 单元测试、OPCache 工作原理和调优、XDebug 性能分析 等高级专题，了解主流扩展包或框架 <code>TP5.1</code>、<code>Laravel 5</code>、<code>Yii 2</code> 等。
+        </li>
+        <li>代码风格方面，严格遵守 <code>PSR-1</code>、<code>PSR-2</code>、<code>PSR-12</code>，熟悉 、<code>PHP-CS&-Fixer</code>、<code>PHPMD</code>、<code>PHPStan</code>、<code>PHPCPD</code> 各路神器。
+        </li>
+        <li>第三方服务方面，熟悉 <code>Travis CI</code>、<code>Scrutinizer CI</code>、<code>Style CI</code>、<code>Coveralls</code>、<code>Sentry</code> 等。</li>
+        <li>前些年从事抓包分析工作，深入了解过 <code>HTTP 1.1</code> 协议和正则表达式，如今成为后端开发者，对应用安全有把握。
+        </li>
+        <li>熟悉长链接服务，目前正在学习 <code>Golang & Python</code>。</li>
+      </ul>
+    </view>
+    <view class='mLj'>
+      <h2>自我修养</h2>
+    </view>
+    <view class='mI'>
+      <ul class='mInfo'>
+        <li>具备良好的开发、测试、文档习惯，对自己一贯高标准要求。</li>
+        <li>坚持写技术博客，总结项目过程中的经验教训，同时锻炼自己的表达能力。</li>
+        <li>热爱科学上网，善于 Google，手搭各类代理。</li>
+        <li>喜爱英语，至少不是短板。</li>
+        <li>社区活跃，每天必看 <code>GitHub</code>、<code>StackOverflow</code>、                        <code>Laravel-China</code>。</li>
+        <li>参与贡献开源项目。<ul>
+        <li><a href="https://github.com/yiisoft/yii2/pull/16528" target="_blank"                       rel="noopener">Yii Framework</a></li>
+        <li><a href="https://github.com/louislivi/SMProxy/commits?author=wi1dcard"                    target="_blank" rel="noopener">Swoole MySQL Proxy</a></li>
+        <li><a href="https://github.com/phpbrew/phpbrew/pull/957" target="_blank"                     rel="noopener">PHPBrew 中文文档</a></li>
+        <li><a href="https://github.com/Baidu-AIP/speech-vad-demo/pull/1" target="_blank"             rel="noopener">百度 AIP - Speech VAD Demo</a></li>
+        <li><a href="https://github.com/tencentyun/cos-php-sdk-v5/pull/72" target="_blank"            rel="noopener">腾讯云 - 对象存储 PHP SDK</a></li>
+        <li><a href="https://github.com/cpliakas/git-wrapper/pull/156" target="_blank"                rel="noopener">Git Wrapper for PHP</a></li>
+        <li>…</li>
+          </ul>
+        </li>
+      </ul>
+    </view>
+    <view class='mLj'>
+      <h2>个人履历</h2>
+    </view>
+    <view class='mI'>
+      <text>请见：https://www.zelblog.com/</text>
+    </view>
+    <view class='mLj'>
+      <h2>致谢</h2>
+    </view>
+    <view class='mI'>
+      <text>感谢您抽出宝贵时间阅读我的简历，我希望我所处的团队是这样的：</text>
+      <ul class="mInfo">  
+        <li>盈利状态。</li>
+        <li>热情，年轻，灵活。</li>
+        <li>鼓励创新，适当放权，结果导向。</li>
+        <li>领导务实、稳重。</li>
+      </ul>
+      <text>期待有机会与您共事！</text>
+    </view>
+    <text class='mH'>我感谢自己平凡，敢爱敢恨没负担；</text>
+    <text class='mH'>我感谢自己不凡，可爱可恨都包揽。</text>
+    <text class='mH'>—— 《通关》- 许嵩</text>
+  </view>
+  <view class='footer'>
+    <text>By:Zerin</text>
+    <text>A man coder born in 1998years for China</text>
+  </view>
+</view>

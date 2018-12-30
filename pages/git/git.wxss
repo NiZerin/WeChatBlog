@@ -1,0 +1,75 @@
+/**index.wxss**/
+Page{
+  
+}
+.top{
+  width: 100%;
+  height: 230rpx;
+  overflow: hidden;
+}
+.top .topImg{
+  width: 100%;
+  height: 100%;
+}
+.main{
+  padding: 15px;
+  background-color: #D6E1E3;
+  overflow: hidden;
+}
+.main .mainText{
+  float: left;
+  color: #999666;
+  font-size: 1rem;
+  line-height: 45px;
+  margin-left: 10px;
+}
+.main .photo{
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  float: left;
+}
+.main .mH{
+  display: inline-block;
+  font-size: 14px;
+  clear: both;
+  border-left: 10px solid #6666;
+  padding-left: 10px;
+  margin-top: 8px;
+}
+.main .mLj{
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+  margin: 1em 0 15px;
+  padding: 0;
+  font-weight: bold;
+  cursor: text;
+}
+.main .mInfo{
+    font-size: 15px;
+    line-height: 1.7;
+    overflow: hidden;
+    color: #777666;
+}
+.main .mInfo li{
+  display: block;
+  padding-left: 15px;
+  margin-top: 12px;
+}
+.main .mI text{
+  font-size: 15px;
+  margin: 15px 0;
+  display: inline-block;
+  color: #777888;
+}
+.footer{
+  padding: 20px 0 15px 0;
+  background-color: #D6E1E3;
+}
+.footer text{
+  text-align: center;
+  margin-bottom: 8px;
+  display: block;
+  color: #777888;
+  font-size: 15px;
+}

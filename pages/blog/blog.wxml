@@ -1,0 +1,8 @@
+<!--pages/blog/blog.wxml-->
+<view class='top'>
+   <image mode='widthFix' class='topImg' src='https://cdn.iacblog.com/wx/logo.png'></image>
+</view>  
+<view class='article'>
+  <text>正在开发</text>
+</view>
+<!-- <web-view src="https://www.iacblog.com/"></web-view> -->
