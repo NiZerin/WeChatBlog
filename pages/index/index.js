@@ -8,13 +8,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-    mHt:[],
-    mLj:[],
-    mLjT:[],
-    mZp:[],
-    mYs:[],
-    mXy:[],
-    mXyO:[]
+    mHt:[],   //头部文字
+    mLj:[],   //快速了解li
+    mLjT:[],  //快速了解text
+    mZp:[],   //我的作品li
+    mYs:[],   //我的优势li
+    mXy:[],   //自我修养li
+    mXyO:[],  //自我修养 开源
+    mTd:[],   //希望的团队
+    mHf:[],   //底部文字
+    f:[]      //脚部信息
   },
 
   /**
@@ -39,6 +42,9 @@ Page({
           var mYs = res.data.mYs;
           var mXy = res.data.mXy;
           var mXyO = res.data.mXyO;
+          var mTd = res.data.mTd;
+          var mHf = res.data.mHf;
+          var f =res.data.f
           that.setData({
             mLj:mLj,
             mHt:mHt,
@@ -46,7 +52,10 @@ Page({
             mZp:mZp,
             mYs:mYs,
             mXy:mXy,
-            mXyO:mXyO
+            mXyO:mXyO,
+            mTd: mTd,
+            mHf: mHf,
+            f:f
           })
         },
         fail: function () {

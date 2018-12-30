@@ -70,19 +70,19 @@
     <view class='mI'>
       <text>感谢您抽出宝贵时间阅读我的简历，我希望我所处的团队是这样的：</text>
       <ul class="mInfo">  
-        <li>盈利状态。</li>
-        <li>热情，年轻，灵活。</li>
-        <li>鼓励创新，适当放权，结果导向。</li>
-        <li>领导务实、稳重。</li>
+       <block wx:for="{{mTd}}" data-item="item" wx:key="">
+        <li>{{item}}</li>
+       </block>
       </ul>
       <text>期待有机会与您共事！</text>
     </view>
-    <text class='mH'>我感谢自己平凡，敢爱敢恨没负担；</text>
-    <text class='mH'>我感谢自己不凡，可爱可恨都包揽。</text>
-    <text class='mH'>—— 《通关》- 许嵩</text>
+      <block wx:for="{{mHf}}" data-item="item" wx:key="">
+        <text class="mH">{{item}}</text>
+      </block>
   </view>
   <view class='footer'>
-    <text>By:Zerin</text>
-    <text>A man coder born in 1998years for China</text>
+     <block wx:for="{{f}}" data-item="item" wx:key="">
+        <text>{{item}}</text>
+      </block>
   </view>
 </view>
