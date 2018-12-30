@@ -1,6 +1,6 @@
 /**index.wxss**/
 Page{
-  
+  word-wrap: break-word;
 }
 .body{
   /* background: url('https://cdn.iacblog.com/wx/bg20181229.png'); */

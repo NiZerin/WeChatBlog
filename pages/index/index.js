@@ -8,8 +8,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-    mInfo: [],
-    mH:[]
+    mHt:[],
+    mLj:[],
+    mLjT:[],
+    mZp:[],
+    mYs:[],
+    mXy:[],
+    mXyO:[]
   },
 
   /**
@@ -27,11 +32,21 @@ Page({
         },
         success: function (res) {
           console.log(res.data);
-          var mInfo = res.data.mInfo;
-          var mH = res.data.mH;
+          var mLj = res.data.mLj;
+          var mHt = res.data.mHt;
+          var mLjT = res.data.mLjT;
+          var mZp = res.data.mZp;
+          var mYs = res.data.mYs;
+          var mXy = res.data.mXy;
+          var mXyO = res.data.mXyO;
           that.setData({
-            mInfo: mInfo,
-            mH:mH
+            mLj:mLj,
+            mHt:mHt,
+            mLjT: mLjT,
+            mZp:mZp,
+            mYs:mYs,
+            mXy:mXy,
+            mXyO:mXyO
           })
         },
         fail: function () {
