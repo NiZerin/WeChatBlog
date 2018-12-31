@@ -19,6 +19,12 @@ Page{
   background-color: #D6E1E3;
   overflow: hidden;
 }
+.main .mTime{
+  line-height: 50px;
+   font-size: 0.6rem;
+   margin-left: 10px;
+   color:#888777;
+}
 .main .mainText{
   float: left;
   color: #999666;

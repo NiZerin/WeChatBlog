@@ -29,6 +29,12 @@ Page{
   border-radius: 45px;
   float: left;
 }
+.main .mTime{
+  line-height: 50px;
+   font-size: 0.6rem;
+   margin-left: 10px;
+   color:#888777;
+}
 .main .mH{
   display: inline-block;
   font-size: 14px;
@@ -37,30 +43,31 @@ Page{
   padding-left: 10px;
   margin-top: 8px;
 }
-.main .mLj{
-  font-size: 16px;
-  border-bottom: 1px solid #eee;
-  margin: 1em 0 15px;
-  padding: 0;
-  font-weight: bold;
-  cursor: text;
-}
-.main .mInfo{
-    font-size: 15px;
-    line-height: 1.7;
-    overflow: hidden;
-    color: #777666;
-}
-.main .mInfo li{
+.line text{
   display: block;
-  padding-left: 15px;
-  margin-top: 12px;
 }
-.main .mI text{
-  font-size: 15px;
-  margin: 15px 0;
-  display: inline-block;
-  color: #777888;
+.line .cpy{
+  margin-top:20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom:#777888 1px solid;
+}
+.line .time,.pos,.exp{
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #888111;
+}
+
+.line .objName{
+  margin: 10px 0 8px 0;
+  font-size: 18px;
+  color: #363636;
+}
+.line .objExp{
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #727272;
 }
 .footer{
   padding: 20px 0 15px 0;

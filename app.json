@@ -1,8 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/blog/blog",
     "pages/git/git",
+    "pages/blog/blog",
     "pages/logs/logs"
   ],
   "window":{
@@ -17,20 +17,20 @@
     "borderStyle": "white",
     "list": [
       {
-        "selectedIconPath": "tImg/shouyetianchong.png",
-        "iconPath": "tImg/shouye.png",
+        "selectedIconPath": "resource/shouyetianchong.png",
+        "iconPath": "resource/shouye.png",
         "pagePath": "pages/blog/blog",
         "text": "博客"
       },
       {
-        "selectedIconPath": "tImg/jiaxingshoucangtianchong.png",
-        "iconPath": "tImg/jiaxingshoucang.png",
+        "selectedIconPath": "resource/jiaxingshoucangtianchong.png",
+        "iconPath": "resource/jiaxingshoucang.png",
         "pagePath": "pages/index/index",
         "text": "简历"
       },
       {
-        "selectedIconPath": "tImg/yonghutianchong.png",
-        "iconPath": "tImg/yonghu.png",
+        "selectedIconPath": "resource/yonghutianchong.png",
+        "iconPath": "resource/yonghu.png",
         "pagePath": "pages/git/git",
         "text": "履历"
       }

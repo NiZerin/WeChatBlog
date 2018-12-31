@@ -8,6 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    time:'',  //时间数据
     mHt:[],   //头部文字
     mLj:[],   //快速了解li
     mLjT:[],  //快速了解text
@@ -35,6 +36,7 @@ Page({
         },
         success: function (res) {
           console.log(res.data);
+          var time = res.data.time;
           var mLj = res.data.mLj;
           var mHt = res.data.mHt;
           var mLjT = res.data.mLjT;
@@ -46,6 +48,7 @@ Page({
           var mHf = res.data.mHf;
           var f =res.data.f
           that.setData({
+            time:time,
             mLj:mLj,
             mHt:mHt,
             mLjT: mLjT,

@@ -48,35 +48,35 @@ https://github.com/CrazyNing98/WeChatMiniProgram-Blog/archive/master.zip
 
 ```
 MiniProgram  WEB部署目录（或者子目录）
-├─pages					主页面文件夹           	
-│  ├─blog             	博客页面资源
+├─pages						页面资源文件           	
+│  ├─blog             		博客页面资源
 │  │  ├─blog.js
 │  │  ├─blog.json
 │  │  ├─blog.wxss
 │  │  └─blog.wxml
-│  ├─index             	简历页面资源
+│  ├─index             		简历页面资源
 │  │  ├─index.js
 │  │  ├─index.json
 │  │  ├─index.wxss
 │  │  └─index.wxml
-│  ├─git             	履历页面资源
+│  ├─git             		履历页面资源
 │  │  ├─git.js
 │  │  ├─git.json
 │  │  ├─git.wxss
 │  │  └─git.wxml
-│  ├─logs             	系统日志目录
+│  ├─logs             		系统日志目录
 │  │  ├─logs.js
 │  │  ├─logs.json
 │  │  ├─logs.wxss
 │  │  └─logs.wxml
-├─tImg					公共资源文件
+├─resource					公共资源文件
 ├─CHANGELOG.md
 ├─README.md
-├─app.js				项目全局js文件
-├─app.json				项目全局json文件
-├─app.wxss				项目全局wxss文件
-├─app.wxml				项目全局wxml文件
-├─project.config.json  	项目配置文件--接入小程序后台
+├─app.js					项目全局js文件
+├─app.json					项目全局json文件
+├─app.wxss					项目全局wxss文件
+├─app.wxml					项目全局wxml文件
+├─project.config.json  		项目配置文件--接入小程序后台
 
 ```
 

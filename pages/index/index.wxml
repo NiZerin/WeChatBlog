@@ -6,6 +6,7 @@
   <view class='main'>
     <image class='photo' src='https://cdn.iacblog.com/wx/photo.png'></image>
     <text class='mainText'>I am Zerin</text>
+    <text class='mTime'>{{time}}</text>
       <block wx:for="{{mHt}}" data-item="item" wx:for-index="idx" wx:key="">
         <text class='mH'>{{item}}</text>
       </block> 
