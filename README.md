@@ -130,7 +130,9 @@ MiniProgram  WEB部署目录（或者子目录）
 
 ![https://cdn.iacblog.com/wx/weimg20181231104241.png](https://cdn.iacblog.com/wx/weimg20181231104241.png)
 
+##### 在线体验：
 
+![https://cdn.iacblog.com/wx/QRLogo.jpg](https://cdn.iacblog.com/wx/QRLogo.jpg)
 
 如果觉得项目不错，可以点个Star哦😉😉😉
 
