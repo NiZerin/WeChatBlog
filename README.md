@@ -35,6 +35,7 @@ https://github.com/CrazyNing98/WeChatMiniProgram-Blog/archive/master.zip
 
 ```javascript
   data: {
+    time:'',  //时间数据  
     mHt:[],   //头部文字
     mLj:[],   //快速了解li
     mLjT:[],  //快速了解text
@@ -66,7 +67,7 @@ https://github.com/CrazyNing98/WeChatMiniProgram-Blog/archive/master.zip
 		//经验
 		'experience'=>'',
 		//项目
-		'project'=>
+		'project'=>		//注意这是二维数组
         	//项目名称
         	'name'=>'',
         	//项目经验
