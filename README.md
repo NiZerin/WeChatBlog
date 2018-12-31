@@ -5,6 +5,12 @@
 
 
 
+##### 说明：
+
+本项目为小程序入门项目，需要一定的前端基础及一点后端知识，项目可能不太好，欢迎大家吐槽，纯萌新小白勿入，最后祝大家Coded愉快。
+
+
+
 ##### 使用方法：
 
 ```
@@ -25,7 +31,7 @@ https://github.com/CrazyNing98/WeChatMiniProgram-Blog/archive/master.zip
 
 ##### 快速搭建：
 
-简历页面所需信息一览表
+简历页面所需数据一览表
 
 ```javascript
   data: {
@@ -39,6 +45,34 @@ https://github.com/CrazyNing98/WeChatMiniProgram-Blog/archive/master.zip
     mTd:[],   //希望的团队
     mHf:[],   //底部文字
     f:[]      //脚部信息
+  },
+```
+
+履历界面所需数据一览表
+
+```javascript
+  data: {
+    time:'',    //时间数据
+    mHt:[],     //头部文字
+    f:[],       //脚部信息
+    mHf:[],     //底部文字
+    line:[		//履历信息
+        //公司
+		'company'=>'',
+		//任职时间
+		'time'=>'',
+		//职位
+		'position'=>'',
+		//经验
+		'experience'=>'',
+		//项目
+		'project'=>
+        	//项目名称
+        	'name'=>'',
+        	//项目经验
+        	'exp'=>''
+        ,     
+        ]     
   },
 ```
 
@@ -82,33 +116,29 @@ MiniProgram  WEB部署目录（或者子目录）
 
 
 
-查看更新日志：
+##### 查看更新日志：
 
 [CHANGELOG.md](https://github.com/CrazyNing98/WeChatMiniProgram-Blog/blob/master/CHANGELOG.md)
 
 
 
-项目截图：
+##### 项目截图：
 
 ![https://cdn.iacblog.com/wx/weimg20181230212758.png](https://cdn.iacblog.com/wx/weimg20181230212758.png)
 
 ![https://cdn.iacblog.com/wx/weimg20181230212818.png](https://cdn.iacblog.com/wx/weimg20181230212818.png)
 
-![https://cdn.iacblog.com/wx/weimg20181230212839.png](https://cdn.iacblog.com/wx/weimg20181230212839.png)
+![https://cdn.iacblog.com/wx/weimg20181231104241.png](https://cdn.iacblog.com/wx/weimg20181231104241.png)
 
 
 
+如果觉得项目不错，可以点个Star哦😉😉😉
 
 
 
+##### 开源协议
 
-
-
-
-
-
-
-
+本项目遵循开源协议为 [Apache License 2.0](https://github.com/CrazyNing98/WeChatMiniProgram-Blog/blob/master/LICENSE)
 
 
 
