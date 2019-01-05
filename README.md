@@ -129,6 +129,8 @@ MiniProgram  WEB部署目录（或者子目录）
 
 ![https://cdn.iacblog.com/wx/weimg20181230212818.png](https://cdn.iacblog.com/wx/weimg20181230212818.png)
 
+![https://cdn.iacblog.com/wx/we_20190106004811.png](https://cdn.iacblog.com/wx/we_20190106004811.png)
+
 
 
 ##### 在线体验：
