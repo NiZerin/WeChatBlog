@@ -1,5 +1,6 @@
+var WxParse = require('../../tools/wxParse/wxParse.js');
 Page({
-
+  
   /**
    * 页面的初始数据
    */
@@ -14,14 +15,30 @@ Page({
     interval: 3000,       //自动切换时间间隔
     duration: 1000,       //滑动动画时长
     inputShowed: false,
-    circular:true
+    circular:true,
+    posts:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    wx.request({
+      url: 'https://wx.iacblog.com/wx/api/blogData',
+      success: (res) => {
+        console.log(res.data);
+        let posts = res.data;
+        for(let i =0 ; i < posts.length; i++){
+          var rendered = posts[i].excerpt.rendered;
+          let res = WxParse.wxParse('rendered'+i, 'html', rendered, this);
+          posts[i].excerpt.rendered = res;
+        }
+        this.setData({
+          posts:posts
+        })
+      }
+    });
+
   },
 
   /**

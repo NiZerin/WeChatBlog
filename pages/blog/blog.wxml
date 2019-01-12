@@ -1,8 +1,18 @@
 <!--pages/blog/blog.wxml-->
+
+
 <view class='top'>
    <image mode='widthFix' class='topImg' src='https://cdn.iacblog.com/wx/logo.png'></image>
 </view>  
 <view class='article'>
-  <text>正在开发</text>
+  <!-- <text>正在开发</text> -->
 </view>
 <!-- <web-view src="https://www.iacblog.com/"></web-view> -->
+<view>
+<block wx:for="{{posts}}" wx:for-index="id" wx:for-item="item" wx:key="">
+    <view>{{item.title.rendered}}</view>
+    <view>{{item.excerpt.rendered}}</view>
+
+    <view>日期:{{item.modified}}</view>
+  </block> 
+</view>

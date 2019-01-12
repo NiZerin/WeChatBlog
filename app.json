@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/blog/blog",
     "pages/index/index",
     "pages/git/git",
-    "pages/blog/blog",
     "pages/logs/logs"
   ],
   "window":{
