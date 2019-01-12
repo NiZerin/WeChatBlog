@@ -1,84 +1,211 @@
-/**index.wxss**/
-Page{
-  word-wrap: break-word;
+/*
+ * 
+ * WordPres版微信小程序
+ * author: jianbo
+ * organization: 守望轩  www.watch-life.net
+ * github:    https://github.com/iamxjb/winxin-app-watch-life.net
+ * 技术支持微信号：iamxjb
+ * 开源协议：MIT
+ * Copyright (c) 2017 https://www.watch-life.net All rights reserved.
+ */
+
+.index-container {
+  /* padding: 0 24rpx; */
+  background-color: #fff;
 }
-.body{
-  /* background: url('https://cdn.iacblog.com/wx/bg20181229.png'); */
+
+.index-header {
+  text-align: center;
+  font-weight: normal;
+  font-size: 30rpx;
+  line-height: 40rpx;
+  color: #757575;
+  /* margin-top: 5rpx; */
 }
-.top{
+
+/*   index   swiper  */
+
+swiper.index-swiper {
+  position: relative;
+  height: 420rpx;
+}
+
+swiper .swiper-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  height: 230rpx;
-  overflow: hidden;
 }
-.top .topImg{
+
+swiper image {
+  display: block;
   width: 100%;
   height: 100%;
 }
-.main{
-  padding: 15px;
-  background-color: #D6E1E3;
+
+swiper .swiper-desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(63, 76, 88, 0.3)100%);
+  color: #fff;
+  line-height: 150rpx;
+  margin: 0 auto;
+  font-weight: 700;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 30rpx;
+ /* height: 120rpx; */
+  text-shadow: 0px 0px 16px #646d75;
 }
-.main .mTime{
-  line-height: 50px;
-   font-size: 0.6rem;
-   margin-left: 10px;
-   color:#888777;
+
+/*   index   swiper  end  */
+
+.search-button {
+  border-left: 0 !important;
+  border-top: 1px solid #fff !important;
+  border-right: 1px solid #fff !important;
+  border-bottom: 1px solid #fff !important;
+  background-color: #fff !important;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: #296fd0 !important;
+  width: 20%;
+  margin: 0 !important;
+  box-shadow: 1px 1px 6px #ecf0f0;
 }
-.main .mainText{
-  float: left;
-  color: #999666;
-  font-size: 1rem;
-  line-height: 45px;
-  margin-left: 10px;
+
+.search-button icon {
+  position: absolute;
+  margin: 28rpx 16rpx;
 }
-.main .photo{
-  width: 45px;
-  height: 45px;
-  border-radius: 45px;
-  float: left;
+
+.search-input {
+  background-color: #fff;
+  padding: 16rpx 0 16rpx 32rpx;
+  min-height: 1rem;
+  font-size: 30rpx;
+  /*  position: absolute;*/
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  /* border: 1px solid #ededed;  */
+  border-right: 0 !important;
+  height: 48rpx;
+  width: 80%;
+  text-align: left;
+  box-shadow: 1px 1px 6px #ecf0f0;
 }
-.main .mH{
-  display: inline-block;
-  font-size: 14px;
-  clear: both;
-  border-left: 10px solid #6666;
-  padding-left: 10px;
-  margin-top: 8px;
+
+.share-button {
+  border: 1px solid #eee !important;
+  color: #296fd0 !important;
+  left: 10rpx;
+  height: 100rpx;
+  width: 200rpx;
 }
-.main .mLj{
-  font-size: 16px;
-  border-bottom: 1px solid #eee;
-  margin: 1em 0 15px;
+
+.search-pancel {
+  display: flex;
+  flex-direction: row;
+  background-color: #eee;
+  padding: 24rpx 24rpx;
+}
+
+.search-pancel image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+  vertical-align: middle;
+}
+
+
+.top-Nav{
+display: flex;
+padding: 24rpx 0;
+background: #fff;
+justify-content:space-around;
+/* border-bottom: 1px solid #eee; */
+}
+
+.top-item{
+text-align: center;
+}
+
+.top-item image{
+width: 88rpx;
+height: 88rpx;
+}
+
+.top-item text{
+line-height: 20rpx;
+font-size: 28rpx;
+color: #4c4c4c;
+font-weight: 500;
+}
+
+
+.share-button{
+  opacity: 0; 
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
   padding: 0;
-  font-weight: bold;
-  cursor: text;
+  top:0;
+  left: 0;
 }
-.main .mInfo{
-    font-size: 15px;
-    line-height: 1.7;
-    overflow: hidden;
-    color: #777666;
+
+
+
+.top-Nav2 {
+  display: flex;
+  flex-direction: row;
+  padding: 24rpx;
+  background: #fff;
+  justify-content: space-between;
+  border-bottom: 20rpx solid #eee;
 }
-.main .mInfo li{
-  display: block;
-  padding-left: 15px;
-  margin-top: 12px;
+
+.top-Nav2-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 339rpx;
+  height: 160rpx;
+  border-radius: 8rpx;
+  background-image: url(http://wx2.sinaimg.cn/mw690/d0cdcf72gy1fxkemocghrj209f04gmx2.jpg);
+  background-size:100%;
 }
-.main .mI text{
-  font-size: 15px;
-  margin: 15px 0;
-  display: inline-block;
-  color: #777888;
+
+.top-Nav2-item2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 339rpx;
+  height: 160rpx;
+  border-radius: 8rpx;
+  background-image: url(http://wx2.sinaimg.cn/mw690/d0cdcf72gy1fxkemkkrkbj209f04g3yp.jpg);
+  background-size:100%;
 }
-.footer{
-  padding: 20px 0 15px 0;
-  background-color: #D6E1E3;
-}
-.footer text{
-  text-align: center;
-  margin-bottom: 8px;
-  display: block;
-  color: #777888;
-  font-size: 15px;
+
+.top-Nav2-item-word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 20rpx;
+  font-size: 24rpx;
+  font-weight: 500;
+  height: 60rpx;
+  width: 200rpx;
+  background-color: #fff;
+  border-radius: 30rpx;
+  border: 1rpx #c4c4c4 solid;
 }

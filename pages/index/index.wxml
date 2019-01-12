@@ -1,89 +1,114 @@
-<view class='body'>
-  <view class='top'>
-    <image mode='widthFix'class='topImg'src="https://cdn.iacblog.com/wx/material-17.png">
-    </image>
+<!--
+/*
+ * 
+ * WordPres版微信小程序
+ * author: jianbo
+ * organization: 守望轩  www.watch-life.net
+ * github:    https://github.com/iamxjb/winxin-app-watch-life.net
+ * 技术支持微信号：iamxjb
+ * 开源协议：MIT
+ * Copyright (c) 2017 https://www.watch-life.net All rights reserved.
+ *
+ */-->
+
+<import src="../../templates/common-list.wxml" />
+<import src="../../templates/copyright.wxml" />
+
+<view class="index-header" style="display:{{displaySwiper}}">
+  <swiper class="index-swiper" indicator-dots="true" interval="10000" autoplay="true" indicator-color="rgba(255, 255, 255, .2)" indicator-active-color="rgba(255, 255, 255, .7)">
+    <block wx:key="id" wx:for="{{postsShowSwiperList}}">
+      <swiper-item id="{{item.id}}" index="{{index}}" data-redicttype="{{item.type}}" data-appid="{{item.appid}}" data-url="{{item.url}}" bindtap="redictAppDetail">
+        <image mode="aspectFill" src="{{item.post_medium_image}}" style="width:100%" />
+        <view class="swiper-mask"></view>
+        <view class="swiper-desc">
+          <text>{{item.post_title}}</text>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="showerror" style="display:{{showerror}}">
+  <image src="../../images/cry80.png" style="height:100rpx;width:100rpx"></image>
+  <view class="errortext">
+    暂时无法访问网络,下拉重试...
+
   </view>
-  <view class='main'>
-    <image class='photo' src='https://cdn.iacblog.com/wx/photo.png'></image>
-    <text class='mainText'>I am Zerin</text>
-    <text class='mTime'>{{time}}</text>
-      <block wx:for="{{mHt}}" data-item="item" wx:for-index="idx" wx:key="">
-        <text class='mH'>{{item}}</text>
-      </block> 
-    <view class='mLj'>
-      <h2>快速了解</h2>
-    </view>
-    <view class='mI'>
-      <ul class='mInfo'>
-      <block wx:for="{{mLj}}" data-item="item" wx:for-index="idx" wx:key="">
-        <li>{{item}}</li>
-      </block>  
-      </ul>
-      <block wx:for="{{mLjT}}" data-item="item" wx:for-index="idx" wx:key="">
-        <text>{{item}}</text>
-      </block> 
-    </view>
-    <view class='mLj'>
-      <h2>我的作品</h2>
-    </view>
-    <view class='mI'>
-      <ul class='mInfo'>
-        <block wx:for="{{mZp}}" data-item="item" wx:key="">
-          <li>{{item}}</li>
-        </block>
-      </ul>
-    </view>
-    <view class='mLj'>
-      <h2>我的优势</h2>
-    </view>
-    <view class='mI'>
-      <ul class='mInfo'>
-        <block wx:for="{{mYs}}" data-item="item" wx:key="">
-          <li>{{item}}</li>
-        </block>
-      </ul>
-    </view>
-    <view class='mLj'>
-      <h2>自我修养</h2>
-    </view>
-    <view class='mI'>
-      <ul class='mInfo'>
-         <block wx:for="{{mXy}}" data-item="item" wx:key="">
-          <li>{{item}}</li>
-        </block>
-        <li>参与贡献开源项目。<ul>
-          <block wx:for="{{mXyO}}" data-item="item" wx:key="">
-            <li>{{item}}</li>
-          </block>
-          </ul>
-        </li>
-      </ul>
-    </view>
-    <view class='mLj'>
-      <h2>个人履历</h2>
-    </view>
-    <view class='mI'>
-      <text>请点击履历界面</text>
-    </view>
-    <view class='mLj'>
-      <h2>致谢</h2>
-    </view>
-    <view class='mI'>
-      <text>感谢您抽出宝贵时间阅读我的简历，我希望我所处的团队是这样的：</text>
-      <ul class="mInfo">  
-       <block wx:for="{{mTd}}" data-item="item" wx:key="">
-        <li>{{item}}</li>
-       </block>
-      </ul>
-      <text>期待有机会与您共事！</text>
-    </view>
-      <block wx:for="{{mHf}}" data-item="item" wx:key="">
-        <text class="mH">{{item}}</text>
+</view>
+
+<view style="display:{{showallDisplay}}">
+
+  <view style="display:{{floatDisplay}}">
+    <form catchsubmit="formSubmit" catchreset="formReset" id="search-form">
+      <view class="search-pancel">
+        <input value="" id="search-input" name="input" confirm-type="search" class="search-input" placeholder="搜索你感兴趣的内容..." bindconfirm="formSubmit"></input>
+        <button class="search-button" form-type="submit" size="mini" plain="true">
+          <icon type="search" color="#959595" size="12" />
+        </button>
+      </view>
+    </form>
+    <!-- 图标导航 -->
+   <!-- <view class="top-Nav">
+      <block wx:for="{{topNav}}" wx:key="id">
+        <view class="top-item" catchtap="onNavRedirect" id="{{item.id}}" data-redicttype="{{item.redirecttype}}" data-url="{{item.url}}" data-appid="{{item.appid}}" data-extraData="{{item.extraData}}">
+          <view>
+            <image src="{{item.image}}"></image>
+          </view>
+          <view>
+            <text>{{item.name}}</text>
+          </view>
+        </view>
       </block>
+       <view class="top-item" style='width:10%; position: relative; float:left; text-align:center'>
+                    <view>
+                        <image src="../../images/kefu.png"></image>
+                    </view>
+                    <view>
+                        <text>客服</text>
+                    </view>
+                    <button class="share-button" open-type="contact">
+                    </button>
+                </view>
+    </view> -->
+    <!-- 图标导航 -->
+
+    <view class='top-Nav2'>
+      <navigator url='../hot/hot' hover-class='none'>
+        <view class="top-Nav2-item">
+          <view class="top-Nav2-item-word">
+            <text>排行榜单</text>
+          </view>
+        </view>
+      </navigator>
+
+
+      <navigator url="../../pages/list/list?categoryID=1059" hover-class='none'>
+        <view class="top-Nav2-item2">
+          <view class="top-Nav2-item-word">
+            <text>微信小程序</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+
+
   </view>
-  <view class='footer'>
-     <block wx:for="{{f}}" data-item="item" wx:key="">
-        <text>{{item}}</text>
-      </block>
+  <view class="container">
+    <!-- 加载图文列表 -->
+    <view class="index-container">
+      <template is="tempCommonList" data="{{postsList}}" />
+
+      <view class="loadingmore" style="display:{{floatDisplay}}">
+        <!-- 
+                <view hidden="{{isLastPage}}">
+                    <button class="more-button" formType="submit" size="mini" bindtap="loadMore">加载更多...</button>
+                </view>-->
+        <view class="no-more" hidden="{{!isLastPage}}">---无更多文章---</view>
+      </view>
+      <view class="copyright" style="display:{{floatDisplay}}">
+        <template is="tempCopyright" />
+      </view>
+    </view>
   </view>
 </view>

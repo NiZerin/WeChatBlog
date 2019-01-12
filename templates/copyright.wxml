@@ -1,0 +1,3 @@
+<template name="tempCopyright">
+<view>  © 2019 泽林博客 iacblog.com      </view>
+</template>
