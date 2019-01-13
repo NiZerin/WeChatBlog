@@ -47,6 +47,12 @@ Page({
     self.fetchPostsData('1');
     Auth.setUserInfoData(self); 
     Auth.checkLogin(self);
+    wx.setNavigationBarTitle({
+      title: config.getWebsiteName + '-个人中心',
+      success: function (res) {
+        // success
+      }
+    });
     
   },
 

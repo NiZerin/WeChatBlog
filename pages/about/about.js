@@ -43,7 +43,7 @@ Page({
   onLoad: function (options) {
     var self = this;
     wx.setNavigationBarTitle({
-      title: '关于本人',
+      title: config.getWebsiteName + '-关于站长',
       success: function (res) {
         // success
       }

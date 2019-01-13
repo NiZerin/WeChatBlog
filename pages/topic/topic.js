@@ -27,7 +27,7 @@ Page({
     },
     onLoad: function (options) {
         wx.setNavigationBarTitle({
-            title: config.getWebsiteName+'-专题',
+            title: config.getWebsiteName+'-专栏',
             success: function (res) {
                 // success
             }
@@ -46,7 +46,7 @@ Page({
         self.setData({
             categoriesList: []
         });
-        //console.log(Api.getCategories());
+        console.log(Api.getCategories());
         var getCategoriesRequest = wxRequest.getRequest(Api.getCategories());
         getCategoriesRequest.then(response => {
             if (response.statusCode === 200) {

@@ -59,7 +59,7 @@ Page({
         likeImag: "like.png",
         likeList: [],
         likeCount: 0,
-        displayLike: 'none',
+        displayLike: 'block',
         replayTemplateId: config.getReplayTemplateId,
         userid: "",
         toFromId: "",
@@ -314,7 +314,7 @@ Page({
         var self = this;
         var getPostDetailRequest = wxRequest.getRequest(Api.getPostByID(id));
         var res;
-        var _displayLike = 'none';
+        var _displayLike = 'block';
         getPostDetailRequest
             .then(response => {
                 res = response;

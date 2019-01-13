@@ -82,10 +82,10 @@
       </navigator>
 
 
-      <navigator url="../../pages/list/list?categoryID=1059" hover-class='none'>
+      <navigator url="../../pages/list/list?categoryID=26" hover-class='none'>
         <view class="top-Nav2-item2">
           <view class="top-Nav2-item-word">
-            <text>微信小程序</text>
+            <text>VUE</text>
           </view>
         </view>
       </navigator>
