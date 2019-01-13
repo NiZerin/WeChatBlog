@@ -29,6 +29,46 @@ https://github.com/CrazyNing98/WeChatMiniProgram-Blog/archive/master.zip
 
 
 
+##### 功能清单：
+
+1.缩略图的方式显示文章列表（首页，分类文章），包括显示文章分类和发布时间，加载分页。
+
+2.在首页用轮播方式显示置顶文章。
+
+3.显示文章分类（专题），包括显示分类的封面图片。
+
+4.显示文章内容页，包括文章站内链接跳转，站外链接复制到剪切板，显示猜你喜欢的相关文章。
+
+5.显示文章评论，提交评论和回复评论，加载评论分页，显示微信用户评论者的头像。
+
+6.显示文章排行
+
+7.显示wordpress“页面”类文字（关于页面）。
+
+8.对文章内容的全文搜索。
+
+9.文章页面的分享、转发，复制。
+
+10.WordPress 插件的配套功能。
+
+11.文章浏览数显示及更新。
+
+12.文章微信用户点赞及点赞的微信用户头像显示。
+
+13.通过微信支付对文章赞赏。
+
+14.赞赏后发送模版消息。
+
+15.web-view内嵌网页跳转。
+
+16.回复评论发送模板消息。
+
+17.专题订阅。
+
+18.文章海报（分享微信朋友圈的卡片）。
+
+
+
 ##### 快速搭建：
 
 简历页面所需数据一览表
@@ -117,6 +157,12 @@ MiniProgram  WEB部署目录（或者子目录）
 
 
 
+##### 技术支持微信：NINGCZ19980501
+
+![https://cdn.iacblog.com/iacblogimages/wexinQRcode.jpg](https://cdn.iacblog.com/iacblogimages/wexinQRcode.jpg)
+
+
+
 ##### 查看更新日志：
 
 [CHANGELOG.md](https://github.com/CrazyNing98/WeChatMiniProgram-Blog/blob/master/CHANGELOG.md)
@@ -125,13 +171,11 @@ MiniProgram  WEB部署目录（或者子目录）
 
 ##### 项目截图：
 
-![https://cdn.iacblog.com/wx/weimg20181230212758.png](https://cdn.iacblog.com/wx/weimg20181230212758.png)
+![https://cdn.iacblog.com/wx/newmini1.jpg](https://cdn.iacblog.com/wx/newmini1.jpg)
 
-![https://cdn.iacblog.com/wx/weimg20181230212818.png](https://cdn.iacblog.com/wx/weimg20181230212818.png)
+![https://cdn.iacblog.com/wx/newmini2.jpg](https://cdn.iacblog.com/wx/newmini2.jpg)
 
-![https://cdn.iacblog.com/wx/we_20190106004811.png](https://cdn.iacblog.com/wx/we_20190106004811.png)
-
-
+![https://cdn.iacblog.com/wx/newmini3.jpg](https://cdn.iacblog.com/wx/newmini3.jpg)
 
 ##### 在线体验：
 
