@@ -1,7 +1,7 @@
 # WeChatMiniProgram-Blog
 #### 微信小程序初体验
 
-微信小程序版的个人博客及简历
+微信小程序版的个人博客 & WordPress
 
 
 

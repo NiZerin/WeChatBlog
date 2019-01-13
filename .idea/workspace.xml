@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="79d28110-61dd-483f-9b3c-a838247d6f32" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/app.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/about.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about/about.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/about.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about/about.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/about.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/comments/comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/comments/comments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/comments/comments.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/comments/comments.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/comments/comments.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/comments/comments.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/detail/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/detail/detail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/detail/detail.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/hot/hot.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hot/hot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/hot/hot.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hot/hot.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/hot/hot.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hot/hot.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/list/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/list/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/list/list.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/list/list.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/list/list.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/list/list.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/logs/logs.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/logs/logs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/logs/logs.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/logs/logs.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/logs/logs.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/logs/logs.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page/page.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page/page.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page/page.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page/page.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pay/pay.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pay/pay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pay/pay.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pay/pay.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pay/pay.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pay/pay.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/poster/poster.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/poster/poster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/poster/poster.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/poster/poster.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/poster/poster.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/poster/poster.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/readlog/readlog.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/readlog/readlog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/readlog/readlog.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/readlog/readlog.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/topic/topic.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/topic/topic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/webpage/webpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/webpage/webpage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/webpage/webpage.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/webpage/webpage.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/footer.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/loading.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/loading.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/wxApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/wxApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/wxRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/wxRequest.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utils/api.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="226" column="25" lean-forward="true" selection-start-line="226" selection-start-column="25" selection-end-line="226" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>守望轩  www.watch-life.net</find>
+      <find>author: jianbo</find>
+      <find>https://github.com/iamxjb/winxin-app-watch-life.net</find>
+      <find>iamxjb</find>
+      <find>https://www.watch-life.net</find>
+      <find>watch-life-net</find>
+      <find>iacblog</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>泽林博客 www.iacblog.com</replace>
+      <replace>author: NiZerin</replace>
+      <replace>https://github.com/CrazyNing98/WeChatMiniProgram-Blog</replace>
+      <replace>NINGCZ19980501</replace>
+      <replace>https://www.iacblog.com/</replace>
+      <replace>iacblog</replace>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>G:\WeChat\WeChatMiniProgram-Blog</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/utils/api.js" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="319" />
+    <option name="y" value="99" />
+    <option name="width" value="1594" />
+    <option name="height" value="935" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="WeChatMiniProgram-Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WeChatMiniProgram-Blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79d28110-61dd-483f-9b3c-a838247d6f32" name="Default Changelist" comment="" />
+      <created>1547364132562</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547364132562</updated>
+      <workItem from="1547364134191" duration="2858000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2858000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20415778" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/utils/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="226" column="25" lean-forward="true" selection-start-line="226" selection-start-column="25" selection-end-line="226" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

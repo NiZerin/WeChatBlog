@@ -1,12 +1,12 @@
 /*
  * 
  * WordPres版微信小程序
- * author: jianbo
- * organization: 守望轩  www.watch-life.net
- * github:    https://github.com/iamxjb/winxin-app-watch-life.net
- * 技术支持微信号：iamxjb
+ * author: NiZerin
+ * organization: 泽林博客 www.iacblog.com
+ * github:    https://github.com/CrazyNing98/WeChatMiniProgram-Blog
+ * 技术支持微信号：NINGCZ19980501
  * 开源协议：MIT
- *  *Copyright (c) 2017 https://www.watch-life.net All rights reserved.
+ *  *Copyright (c) 2017 https://www.iacblog.com/ All rights reserved.
  * 
  */
 
@@ -403,11 +403,7 @@ Page({
             })
             .catch(function (error) {
                 console.log('error: ' + error);
-
             })
-            
-
-
     },
     //给a标签添加跳转和复制链接事件
     wxParseTagATap: function (e) {
