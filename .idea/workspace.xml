@@ -2,53 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79d28110-61dd-483f-9b3c-a838247d6f32" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/app.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about/about.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/about.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about/about.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/about.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/comments/comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/comments/comments.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/comments/comments.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/comments/comments.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/comments/comments.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/comments/comments.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/detail/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/detail/detail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/detail/detail.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/hot/hot.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hot/hot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/hot/hot.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hot/hot.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/hot/hot.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hot/hot.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/list/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/list/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/list/list.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/list/list.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/list/list.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/list/list.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/logs/logs.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/logs/logs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/logs/logs.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/logs/logs.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/logs/logs.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/logs/logs.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page/page.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page/page.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/page/page.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page/page.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/pay/pay.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pay/pay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/pay/pay.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pay/pay.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/pay/pay.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pay/pay.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/poster/poster.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/poster/poster.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/poster/poster.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/poster/poster.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/poster/poster.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/poster/poster.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/readlog/readlog.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/readlog/readlog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/readlog/readlog.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/readlog/readlog.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/topic/topic.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/topic/topic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/webpage/webpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/webpage/webpage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/webpage/webpage.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/webpage/webpage.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/footer.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/loading.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/loading.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/wxApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/wxApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/wxRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/wxRequest.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,14 +12,63 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/utils/api.js">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/footer.wxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="226" column="25" lean-forward="true" selection-start-line="226" selection-start-column="25" selection-end-line="226" selection-end-column="25" />
+            <state relative-caret-position="357">
+              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/header.wxml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/loading.wxml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/login.wxml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/login-popup.wxml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/common-list.wxml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/copyright.wxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="32" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/modal-view/modal-view.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/modal-view/modal-view.wxml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/modal-view/modal-view.wxss">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -78,6 +82,7 @@
       <find>https://www.watch-life.net</find>
       <find>watch-life-net</find>
       <find>iacblog</find>
+      <find>watch</find>
     </findStrings>
     <replaceStrings>
       <replace>泽林博客 www.iacblog.com</replace>
@@ -99,13 +104,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/utils/api.js" />
+        <option value="$PROJECT_DIR$/templates/footer.wxml" />
       </list>
     </option>
   </component>
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="319" />
     <option name="y" value="99" />
     <option name="width" value="1594" />
@@ -123,6 +129,17 @@
             <path>
               <item name="WeChatMiniProgram-Blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="WeChatMiniProgram-Blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WeChatMiniProgram-Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WeChatMiniProgram-Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WeChatMiniProgram-Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WeChatMiniProgram-Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="modal-view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -159,23 +176,20 @@
       <option name="presentableId" value="Default" />
       <updated>1547364132562</updated>
       <workItem from="1547364134191" duration="2858000" />
+      <workItem from="1547369000066" duration="182000" />
+      <workItem from="1547374782304" duration="5000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2858000" />
+    <option name="totallyTimeSpent" value="3045000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="319" y="99" width="1594" height="935" extended-state="0" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20415778" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20860496" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -183,10 +197,15 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,9 +215,47 @@
     <entry file="file://$PROJECT_DIR$/utils/api.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
-          <caret line="226" column="25" lean-forward="true" selection-start-line="226" selection-start-column="25" selection-end-line="226" selection-end-column="25" />
+          <caret line="226" column="25" selection-start-line="226" selection-start-column="25" selection-end-line="226" selection-end-column="25" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/footer.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header.wxml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/loading.wxml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.wxml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login-popup.wxml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/common-list.wxml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/copyright.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/modal-view/modal-view.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/modal-view/modal-view.wxml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/modal-view/modal-view.wxss">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

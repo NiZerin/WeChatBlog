@@ -5,13 +5,13 @@
 
 
 
-##### 说明：
+#### 说明：
 
 本项目为小程序入门项目，需要一定的前端基础及一点后端知识，项目可能不太好，欢迎大家吐槽，纯萌新小白勿入，最后祝大家Coded愉快。
 
 
 
-##### 使用方法：
+#### 使用方法：
 
 ```
 git clone https://github.com/CrazyNing98/WeChatMiniProgram-Blog.git
@@ -29,7 +29,7 @@ https://github.com/CrazyNing98/WeChatMiniProgram-Blog/archive/master.zip
 
 
 
-##### 功能清单：
+#### 功能清单：
 
 1.缩略图的方式显示文章列表（首页，分类文章），包括显示文章分类和发布时间，加载分页。
 
@@ -69,115 +69,37 @@ https://github.com/CrazyNing98/WeChatMiniProgram-Blog/archive/master.zip
 
 
 
-##### 快速搭建：
+#### 快速搭建：
 
-简历页面所需数据一览表
+在 WordPress 后台安装插件 **REST API TO MiniProgram** 并启用，填写 小程序 AppID 和 AppSecret 。
 
-```javascript
-  data: {
-    time:'',  //时间数据  
-    mHt:[],   //头部文字
-    mLj:[],   //快速了解li
-    mLjT:[],  //快速了解text
-    mZp:[],   //我的作品li
-    mYs:[],   //我的优势li
-    mXy:[],   //自我修养li
-    mXyO:[],  //自我修养 开源
-    mTd:[],   //希望的团队
-    mHf:[],   //底部文字
-    f:[]      //脚部信息
-  },
-```
+克隆当前项目，用微信开发者工具打开项目，打开  **project.config.json**  替换  **appid**  ，并修改 **utils** 目录下的 **config.js** 文件。
 
-履历界面所需数据一览表
-
-```javascript
-  data: {
-    time:'',    //时间数据
-    mHt:[],     //头部文字
-    f:[],       //脚部信息
-    mHf:[],     //底部文字
-    line:[		//履历信息
-        //公司
-		'company'=>'',
-		//任职时间
-		'time'=>'',
-		//职位
-		'position'=>'',
-		//经验
-		'experience'=>'',
-		//项目
-		'project'=>		//注意这是二维数组
-        	//项目名称
-        	'name'=>'',
-        	//项目经验
-        	'exp'=>''
-        ,     
-        ]     
-  },
-```
+详细安装教程请点击这里查看：[点我](https://www.iacblog.com/2019/01/556.html)
 
 
 
-##### 目录结构：
+#### 技术支持微信：NINGCZ19980501
 
-```
-MiniProgram  WEB部署目录（或者子目录）
-├─pages						页面资源文件           	
-│  ├─blog             		博客页面资源
-│  │  ├─blog.js
-│  │  ├─blog.json
-│  │  ├─blog.wxss
-│  │  └─blog.wxml
-│  ├─index             		简历页面资源
-│  │  ├─index.js
-│  │  ├─index.json
-│  │  ├─index.wxss
-│  │  └─index.wxml
-│  ├─git             		履历页面资源
-│  │  ├─git.js
-│  │  ├─git.json
-│  │  ├─git.wxss
-│  │  └─git.wxml
-│  ├─logs             		系统日志目录
-│  │  ├─logs.js
-│  │  ├─logs.json
-│  │  ├─logs.wxss
-│  │  └─logs.wxml
-├─resource					公共资源文件
-├─CHANGELOG.md
-├─README.md
-├─app.js					项目全局js文件
-├─app.json					项目全局json文件
-├─app.wxss					项目全局wxss文件
-├─app.wxml					项目全局wxml文件
-├─project.config.json  		项目配置文件--接入小程序后台
-
-```
+![https://cdn.iacblog.com/wx/weimg_20190114183056.png](https://cdn.iacblog.com/wx/weimg_20190114183056.png)
 
 
 
-##### 技术支持微信：NINGCZ19980501
-
-![https://cdn.iacblog.com/iacblogimages/wexinQRcode.jpg](https://cdn.iacblog.com/iacblogimages/wexinQRcode.jpg)
-
-
-
-##### 查看更新日志：
+#### 查看更新日志：
 
 [CHANGELOG.md](https://github.com/CrazyNing98/WeChatMiniProgram-Blog/blob/master/CHANGELOG.md)
 
 
 
-##### 项目截图：
+#### 项目截图：
 
-![https://cdn.iacblog.com/wx/newmini1.jpg](https://cdn.iacblog.com/wx/newmini1.jpg)
+![https://cdn.iacblog.com/wx/weimg_20190114182614.png](https://cdn.iacblog.com/wx/weimg_20190114182614.png)
 
-![https://cdn.iacblog.com/wx/newmini2.jpg](https://cdn.iacblog.com/wx/newmini2.jpg)
+![https://cdn.iacblog.com/wx/weimg_20190114182659.png](https://cdn.iacblog.com/wx/weimg_20190114182659.png)
 
-![https://cdn.iacblog.com/wx/newmini3.jpg](https://cdn.iacblog.com/wx/newmini3.jpg)
+![https://cdn.iacblog.com/wx/weimg_20190114182716.png](https://cdn.iacblog.com/wx/weimg_20190114182716.png)
 
-##### 在线体验：
+#### 在线体验：
 
 ![https://cdn.iacblog.com/wx/QRLogo.jpg](https://cdn.iacblog.com/wx/QRLogo.jpg)
 
@@ -185,7 +107,15 @@ MiniProgram  WEB部署目录（或者子目录）
 
 
 
-##### 开源协议
+#### 感谢：
+
+守望轩 小程序框架
+
+wxParse丶ZanUI
+
+
+
+#### 开源协议
 
 本项目遵循开源协议为 [Apache License 2.0](https://github.com/CrazyNing98/WeChatMiniProgram-Blog/blob/master/LICENSE)
 
