@@ -75,7 +75,7 @@ https://github.com/CrazyNing98/WeChatMiniProgram-Blog/archive/master.zip
 
 克隆当前项目，用微信开发者工具打开项目，打开  **project.config.json**  替换  **appid**  ，并修改 **utils** 目录下的 **config.js** 文件。
 
-详细安装教程请点击这里查看：[点我](https://www.iacblog.com/2019/01/556.html)
+## 详细安装教程请点击这里查看：[点我](https://www.iacblog.com/2019/01/556.html)
 
 
 
