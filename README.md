@@ -111,7 +111,7 @@ https://github.com/CrazyNing98/WeChatMiniProgram-Blog/archive/master.zip
 
 守望轩 小程序框架
 
-wxParse丶ZanUI
+wxParse丶ZanUI丶VantuUI
 
 
 
