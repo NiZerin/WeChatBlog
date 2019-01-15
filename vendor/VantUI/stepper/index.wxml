@@ -1,0 +1,21 @@
+<view class="van-stepper custom-class">
+  <view
+    class="minus-class van-stepper__minus {{ minusDisabled ? 'van-stepper__minus--disabled' : '' }}"
+    bind:tap="onMinus"
+  />
+  <view class="input-class van-stepper__input-wrapper {{ disabled || disableInput ? 'van-stepper__input-wrapper--disabled' : '' }}" bindtap="onFocus">
+    <input
+      type="{{ integer ? 'number' : 'digit' }}"
+      class="van-stepper__input"
+      value="{{ value }}"
+      focus="{{ focus }}"
+      disabled="{{ disabled || disableInput }}"
+      bindinput="onInput"
+      bind:blur="onBlur"
+    />
+  </view>
+  <view
+    class="plus-class van-stepper__plus {{ plusDisabled ? 'van-stepper__plus--disabled' : '' }}"
+    bind:tap="onPlus"
+  />
+</view>

@@ -24,6 +24,10 @@
 }
 
 /*   index   swiper  */
+.scroll-view {
+  width: 100%;
+  white-space: normal;
+}
 
 swiper.index-swiper {
   position: relative;

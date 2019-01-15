@@ -1,0 +1,1 @@
+@import '../common/index.wxss';.van-notify{z-index:110;position:fixed;top:0;width:100%;text-align:center;box-sizing:border-box;padding:6px 15px;font-size:14px;line-height:20px}

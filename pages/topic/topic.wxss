@@ -1,3 +1,18 @@
+/*
+ * 
+ * WordPres版微信小程序
+ * author: NiZerin
+ * organization: 泽林博客 www.iacblog.com
+ * github:    https://github.com/CrazyNing98/WeChatMiniProgram-Blog
+ * 技术支持微信号：NINGCZ19980501
+ * 开源协议：MIT
+ * 
+ *  *Copyright (c) 2017 https://www.iacblog.com/ All rights reserved.
+ */
+
+
+
+
 .container {
   height: 100%;
     /* display: flex;
@@ -15,7 +30,7 @@
 /*topic list*/
 
 .topic-common-list {
-   padding: 48rpx 0rpx 48rpx 48rpx; 
+   padding: 24rpx; 
    margin: 0 auto;
 }
 
@@ -25,22 +40,23 @@
   /* border-bottom: 1px solid #eee; */
   overflow: hidden;
   /* clear: both;  */
-  width: 303rpx;
-   /* border: 1px solid #ccc; 
-  border-radius: 6rpx; */
+  width: 100%;
+   /* border: 1px solid #ccc; */
+  border-radius: 12rpx;  
   margin-bottom: 60rpx;
-  margin-right: 48rpx;
   background: #fff;
+  box-shadow:2rpx 4rpx 80rpx #c2c2c2;
+
 }
 
 .list-item  image.cover {
-  width: 303rpx;
-  height: 303rpx;
-  border-radius: 12rpx;
+  width: 100%;
+  height: 340rpx;
+  /* border-radius: 6rpx; */
 }
 
 .content-title {
-  padding: 16rpx 0rpx;
+  padding: 12rpx 20rpx;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -49,12 +65,12 @@
 .content-title text {
   font-size: 30rpx;
   line-height: 30rpx;
-  /* font-weight: bold; */
+  font-weight: bold;
   color: #1b1b1b;
 }
 
 .content-brief {
-  padding: 0rpx 0rpx 30rpx;
+  padding: 0rpx 0rpx 30rpx 20rpx;
   font-size: 28rpx;
   line-height: 40rpx;
   font-weight: 400;
@@ -72,7 +88,7 @@
     text-align: right;
     width: 40%;
     margin-right: 10rpx;
- 
+    padding-top: 10rpx;
 }
 
 .img-menu {
@@ -80,5 +96,5 @@
   height: 40rpx;
   display: inline-block;
   text-align: center;
-   border-radius: 12rpx;
+   border-radius: 6rpx;
 }

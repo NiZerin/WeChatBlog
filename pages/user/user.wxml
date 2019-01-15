@@ -1,0 +1,41 @@
+<!--
+/*
+ * 
+ * WordPres版微信小程序
+ * author: NiZerin
+ * organization: 泽林博客 www.iacblog.com
+ * github:    https://github.com/CrazyNing98/WeChatMiniProgram-Blog
+ * 技术支持微信号：NINGCZ19980501
+ * 开源协议：MIT
+ * Copyright (c) 2017 https://www.iacblog.com/ All rights reserved.
+ *
+ */-->
+
+<import src="../../templates/copyright.wxml" />
+<import src="../../templates/login-popup.wxml" />
+
+<view class="readlog-container">  
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class='user-cell'>
+  <van-cell-group>
+    <van-cell title="热门排行" is-link url="../hot/hot" />
+    <van-cell title="最近浏览" is-link url="../readlog/readlog" />
+    <van-cell title="关于作者" is-link url="../about/about" />
+    </van-cell-group>
+  </view>
+  <view class='user-cell'>
+  <van-cell-group>
+    <van-cell title="意见反馈" is-link/>
+    <button class="feedback-button" open-type="feedback"></button>
+    <van-cell title="在线咨询" is-link/>
+    <button class="contact-button" open-type="contact" bindtap="notifyAdmin"></button>
+    </van-cell-group>
+  </view>
+  <template is="login-popup" data="{{show: isLoginPopup, userInfo: userInfo}}"></template>
+  <view class="copyright" style="display:{{floatDisplay}}">
+    <template is="tempCopyright" />
+  </view>
+</view>

@@ -1,0 +1,82 @@
+/*
+ * 
+ * WordPres版微信小程序
+ * author: NiZerin
+ * organization: 泽林博客 www.iacblog.com
+ * github:    https://github.com/CrazyNing98/WeChatMiniProgram-Blog
+ * 技术支持微信号：NINGCZ19980501
+ * 开源协议：MIT
+ * 
+ *  *Copyright (c) 2017 https://www.iacblog.com/ All rights reserved.
+ */
+
+
+.readlog-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /*padding: 50rpx 0; */
+  box-sizing: border-box;
+}
+
+
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #118fff;
+  height: 320rpx;
+  width: 100%;
+  /* position: absolute;
+  z-index: 2;
+  top: 70rpx;
+  left: 311rpx; */
+}
+
+.userinfo-avatar {
+  width: 135rpx;
+  height: 135rpx;
+  margin: 40rpx 0 25rpx;
+  border-radius: 50%;
+}
+
+
+
+.userinfo-nickname {
+  color: #fff;
+  font-size: 32rpx;
+}
+
+.feedback-button {
+  opacity: 0;
+  position: absolute;
+  width: 100vw;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+.contact-button {
+  opacity: 0;
+  position: absolute;
+  width: 100vw;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+.user-cell{
+  width: 100%;
+  padding-top: 10px;
+  background-color: #eeeeee;
+}

@@ -12,7 +12,8 @@
         "pages/pay/pay",
         "pages/webpage/webpage",
         "pages/comments/comments",
-        "pages/poster/poster"
+        "pages/poster/poster",
+        "pages/user/user"
     ],
     "window": {
         "backgroundTextStyle": "dark",
@@ -39,16 +40,10 @@
                 "text": "专题"
             },
             {
-                "pagePath": "pages/readlog/readlog",
+                "pagePath": "pages/user/user",
                 "iconPath": "images/tar-person.png",
                 "selectedIconPath": "images/tar-person-on.png",
                 "text": "我的"
-            },
-            {
-                "pagePath": "pages/about/about",
-                "iconPath": "images/tar-about.png",
-                "selectedIconPath": "images/tar-about-on.png",
-                "text": "关于"
             }
         ]
     },

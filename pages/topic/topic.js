@@ -27,7 +27,7 @@ Page({
     },
     onLoad: function (options) {
         wx.setNavigationBarTitle({
-            title: config.getWebsiteName+'-专栏',
+            title: '我关注的专栏',
             success: function (res) {
                 // success
             }
