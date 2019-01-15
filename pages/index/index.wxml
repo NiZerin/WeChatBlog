@@ -14,11 +14,23 @@
 <import src="../../templates/common-list.wxml" />
 <import src="../../templates/copyright.wxml" />
 
+<!-- <form catchsubmit="formSubmit" catchreset="formReset" id="search-form">
+  <view class="search-pancel">
+    <input value="" id="search-input" name="input" confirm-type="search" class="search-input" placeholder="搜索你感兴趣的内容..." bindconfirm="formSubmit"></input>
+    <button class="search-button" form-type="submit" size="mini" plain="true">
+      <icon type="search" color="#959595" size="12" />
+    </button>
+  </view>
+</form> -->
+
+
+
+<!-- 首页幻灯片 -->
 <view class="index-header" style="display:{{displaySwiper}}">
   <swiper class="index-swiper" indicator-dots="true" interval="10000" autoplay="true" indicator-color="rgba(255, 255, 255, .2)" indicator-active-color="rgba(255, 255, 255, .7)">
     <block wx:key="id" wx:for="{{postsShowSwiperList}}">
       <swiper-item id="{{item.id}}" index="{{index}}" data-redicttype="{{item.type}}" data-appid="{{item.appid}}" data-url="{{item.url}}" bindtap="redictAppDetail">
-        <image mode="aspectFill" src="{{item.post_medium_image}}" style="width:100%" />
+        <image class="itemImg" mode="aspectFill" src="{{item.post_medium_image}}" style="width:95%" />
         <view class="swiper-mask"></view>
         <view class="swiper-desc">
           <text>{{item.post_title}}</text>
@@ -28,83 +40,119 @@
   </swiper>
 </view>
 
+
 <view class="showerror" style="display:{{showerror}}">
   <image src="../../images/cry80.png" style="height:100rpx;width:100rpx"></image>
   <view class="errortext">
     暂时无法访问网络,下拉重试...
-
   </view>
 </view>
 
 <view style="display:{{showallDisplay}}">
 
-  <view style="display:{{floatDisplay}}">
-    <form catchsubmit="formSubmit" catchreset="formReset" id="search-form">
-      <view class="search-pancel">
-        <input value="" id="search-input" name="input" confirm-type="search" class="search-input" placeholder="搜索你感兴趣的内容..." bindconfirm="formSubmit"></input>
-        <button class="search-button" form-type="submit" size="mini" plain="true">
-          <icon type="search" color="#959595" size="12" />
-        </button>
-      </view>
-    </form>
-    <!-- 图标导航 -->
- <view class="top-Nav">
-      <block wx:for="{{topNav}}" wx:key="id">
-        <view class="top-item" catchtap="onNavRedirect" id="{{item.id}}" data-redicttype="{{item.redirecttype}}" data-url="{{item.url}}" data-appid="{{item.appid}}" data-extraData="{{item.extraData}}">
-          <view>
-            <image src="{{item.image}}"></image>
-          </view>
-          <view>
-            <text>{{item.name}}</text>
+  <!-- 首页搜索框 -->
+
+      <form catchsubmit="formSubmit" catchreset="formReset" id="search-form">
+        <view class="search-pancel">
+          <input value="" id="search-input" name="input" confirm-type="search" class="search-input" placeholder="搜索你感兴趣的内容..." bindconfirm="formSubmit"></input>
+            <button class="search-button" form-type="submit" size="mini" plain="true">
+              <icon type="search" color="#959595" size="12" />
+            </button>
+        </view>
+      </form>
+   
+<!--图标导航-->
+<view class="container">
+    <view class="cms-tit">
+      <view class="cms-tit-left"></view>
+      <view class="cms-tit-txt">猜你喜欢</view>
+      <view class="cms-tit-more" data-foodlink="yeehee"> </view>
+    </view>
+    <view class='top-Nav2'>
+          <navigator url='../hot/hot' hover-class='none'>
+            <view class="top-Nav2-item">
+              <view class="top-Nav2-item-word">
+                <text>排行榜单</text>
+              </view>
+            </view>
+          </navigator>
+          <navigator url="../../pages/list/list?categoryID=26" hover-class='none'>
+            <view class="top-Nav2-item2">
+              <view class="top-Nav2-item-word">
+                <text>VUE</text>
+              </view>
+            </view>
+          </navigator>
+        </view>
+
+  </view>
+<!--图标导航 end>
+
+
+  <!-- 网友推荐 -->
+
+  <!-- <view class="container">
+    <view class="cms-tit">
+      <view class="cms-tit-left"></view>
+      <view class="cms-tit-txt">网友推荐</view>
+      <navigator url="../list/list?categoryID=4" class="cms-tit-more">
+        更多
+        <view class="arrow-right"></view>
+      </navigator>
+    </view>
+    <view class="cms-cont mstTwoPicsPerRow">
+      <block wx:key="id" wx:for="{{recommendPostsList}}">
+        <view class="mstTwoPicsPerRow-item" index="{{index}}" id="{{item.id}}" bindtap="redictDetail">
+          <image class="mstTwoPicsPerRow-img" mode="aspectFill" src="{{item.post_thumbnail_image}}"></image>
+          <view class="bg-shadow"></view>
+          <view class="img-text">
+            <text class="img-text-large">{{item.title.rendered}} </text>
+            <text class="img-text-small">{{item.pageviews}} 位网友推荐</text>
           </view>
         </view>
       </block>
-       <view class="top-item" style='width:10%; position: relative; float:left; text-align:center'>
-                    <view>
-                        <image src="../../images/kefu.png"></image>
-                    </view>
-                    <view>
-                        <text>客服</text>
-                    </view>
-                    <button class="share-button" open-type="contact">
-                    </button>
-                </view>
-    </view> 
-    <!-- 图标导航 -->
-
-    <view class='top-Nav2'>
-      <navigator url='../hot/hot' hover-class='none'>
-        <view class="top-Nav2-item">
-          <view class="top-Nav2-item-word">
-            <text>排行榜单</text>
-          </view>
-        </view>
-      </navigator>
-
-
-      <navigator url="../../pages/list/list?categoryID=26" hover-class='none'>
-        <view class="top-Nav2-item2">
-          <view class="top-Nav2-item-word">
-            <text>VUE</text>
-          </view>
-        </view>
-      </navigator>
     </view>
-
-
-
-  </view>
+  </view> -->
+  
+  <!-- 精选资讯 start-->
+<!--
   <view class="container">
+    <view class="cms-tit">
+      <view class="cms-tit-left"></view>
+      <view class="cms-tit-txt">精选资讯</view>
+      <view class="cms-tit-more" data-foodlink="yeehee">
+      </view>
+    </view>
+    <scroll-view scroll-x="true" scroll-with-animation="true" style="display:flex;white-space:nowrap;padding:4rpx 0 24rpx;">
+      <view class="cms-cont" wx:key="id" wx:for="{{selectionPostsList}}" style='width:93%'>
+        <view index="{{index}}" id="{{item.id}}" bindtap="redictDetail">
+            <image class="mstOnePic-img" mode="aspectFill" src="{{item.post_thumbnail_image}}"></image>
+          <text class="new_icon">广告</text>
+          <view class="bg-shadow bg-shadow-one"></view>
+          <view class="img-text img-text-one">
+            <text class="img-text-large">{{item.title.rendered}}</text>
+            <text class="img-text-small"></text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view> -->
+  <!-- 精选资讯 end-->
+
+  <view class="container">
+    <view class="cms-tit">
+      <view class="cms-tit-left"></view>
+      <view class="cms-tit-txt">最新文章</view>
+    </view>
     <!-- 加载图文列表 -->
     <view class="index-container">
       <template is="tempCommonList" data="{{postsList}}" />
-
       <view class="loadingmore" style="display:{{floatDisplay}}">
         <!-- 
                 <view hidden="{{isLastPage}}">
                     <button class="more-button" formType="submit" size="mini" bindtap="loadMore">加载更多...</button>
                 </view>-->
-        <view class="no-more" hidden="{{!isLastPage}}">---无更多文章---</view>
+        <view class="no-more" hidden="{{!isLastPage}}">- 无更多文章 -</view>
       </view>
       <view class="copyright" style="display:{{floatDisplay}}">
         <template is="tempCopyright" />

@@ -62,7 +62,7 @@ Page({
     var title = "分享“"+ config.getWebsiteName +"”的文章排行。";
     var path ="pages/hot/hot";
     return {
-      title: title,
+      title: title + '-排行榜',
       path: path,
       success: function (res) {
         // 转发成功
