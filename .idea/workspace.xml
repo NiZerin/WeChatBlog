@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79d28110-61dd-483f-9b3c-a838247d6f32" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pages/hot/hot.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hot/hot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/hot/hot.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hot/hot.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/list/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/list/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/user/user.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/user/user.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
-    </list>
+    <list default="true" id="79d28110-61dd-483f-9b3c-a838247d6f32" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +57,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/index/index.wxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="1512">
               <caret line="72" column="33" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="33" />
             </state>
           </provider>
@@ -134,7 +126,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -142,21 +133,11 @@
               <item name="WeChatMiniProgram-Blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="WeChatMiniProgram-Blog" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="WeChatMiniProgram-Blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WeChatMiniProgram-Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WeChatMiniProgram-Blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WeChatMiniProgram-Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,16 +172,18 @@
       <workItem from="1547369000066" duration="182000" />
       <workItem from="1547374782304" duration="5000" />
       <workItem from="1547539875523" duration="1124000" />
+      <workItem from="1547545329207" duration="4000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4169000" />
+    <option name="totallyTimeSpent" value="4173000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="319" y="99" width="1594" height="935" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21121252" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21382008" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -272,7 +255,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/index/index.wxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
+        <state relative-caret-position="1512">
           <caret line="72" column="33" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="33" />
         </state>
       </provider>

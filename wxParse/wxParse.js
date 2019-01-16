@@ -28,17 +28,18 @@ wx.getSystemInfo({
 /**
  * 主函数入口区
  **/
-function wxParse(bindName = 'wxParseData', type='html', data='<div class="color:red;">数据不能为空</div>', target,imagePadding) {
+function wxParse(bindName = 'wxParseData', type='html', data='<div class="color:red;">数据不能为空</div>', target,imagePadding,isdeac = false) {
   var that = target;
   var transData = {};//存放转化后的数据
   if (type == 'html') {
     transData = HtmlToJson.html2json(data, bindName);
-    console.log(JSON.stringify(transData, ' ', ' '));
+    // console.log(transData);
+    // console.log(JSON.stringify(transData, ' ', ' '));
   } else if (type == 'md' || type == 'markdown') {
     var converter = new showdown.Converter();
     var html = converter.makeHtml(data);
     transData = HtmlToJson.html2json(html, bindName);
-    console.log(JSON.stringify(transData, ' ', ' '));
+    // console.log(JSON.stringify(transData, ' ', ' '));
   }
   transData.view = {};
   transData.view.imagePadding = 0;
@@ -50,6 +51,10 @@ function wxParse(bindName = 'wxParseData', type='html', data='<div class="color:
   that.setData(bindData)
   that.wxParseImgLoad = wxParseImgLoad;
   that.wxParseImgTap = wxParseImgTap;
+  // console.log(isdeac);
+  if(isdeac){
+    return transData.nodes[0].nodes[0].text;
+  }
 }
 // 图片点击事件
 function wxParseImgTap(e) {

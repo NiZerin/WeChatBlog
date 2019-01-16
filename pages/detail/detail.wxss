@@ -361,7 +361,7 @@
 }
 
 .likeText {
-  text-align: left;
+  text-align: center;
   font-weight: normal;
   font-size: 26rpx;
   line-height: 30rpx;

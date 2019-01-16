@@ -37,7 +37,6 @@
                 <text class="entry-icon-text">{{detail.pageviews}}</text>
                 <image src="../../images/home-like.png" style="height:24rpx;width:24rpx;margin-left: 20rpx;"></image>
                 <text class="entry-icon-text">{{likeCount}}</text>
-
             </view>
             <view class="entry-summary">
                 <template is="wxParse" data="{{wxParseData:article.nodes}}" />

@@ -1,14 +1,10 @@
-<template name="tempCommonList">
 
-  <view class="common-list">
+<template name="tempCommonList">
+  <view class="top-list">
     <block wx:key="id" wx:for="{{postsList}}">
       <view class="list-item has-img" index="{{index}}" id="{{item.id}}" bindtap="redictDetail">
-        <image src="{{item.post_medium_image}}" mode="aspectFill" class="cover"></image>
         <view class="content-title">
           <text>{{item.title.rendered}}</text>
-        </view>
-        <view class="content-desc">
-          <text>{{item.excerpt.rendered}}</text>
         </view>
         <view class="content-date">
           <image src="../../images/calendar.png"></image>
@@ -20,6 +16,7 @@
             <image src="../../images/home-like.png"></image>
             <text class="">{{item.like_count}}</text>        
         </view>
+        <image src="{{item.post_medium_image}}" mode="aspectFill" class="cover"></image>
       </view>
     </block>
   </view>  

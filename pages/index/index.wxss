@@ -8,7 +8,12 @@
  * 开源协议：MIT
  * Copyright (c) 2017 https://www.iacblog.com/ All rights reserved.
  */
+swiper{
 
+}
+swiper-itme{
+
+}
 .scroll-view {
   width: 100%;
   white-space: normal;
@@ -110,12 +115,10 @@ swiper .swiper-desc {
   padding: 16rpx 0 16rpx 32rpx;
   min-height: 1rem;
   font-size: 30rpx;
-  /*  position: absolute;*/
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  /* border: 1px solid #ededed;  */
   border-right: 0 !important;
   height: 40rpx;
   width: 80%;
@@ -150,7 +153,6 @@ swiper .swiper-desc {
   padding: 8rpx 20rpx 25rpx;
   background: #fff;
   justify-content: space-around;
-  /*border-bottom: 1px solid #eee;*/
 }
 
 .top-item {
@@ -162,8 +164,6 @@ swiper .swiper-desc {
 }
 
 .top-item image {
-  /* width: 58rpx;
-height: 58rpx; */
   width: 60rpx;
   height: 60rpx;
 }
@@ -204,7 +204,7 @@ height: 58rpx; */
   line-height: 34rpx;
   margin-right: 12rpx;
   margin-bottom: -4rpx;
-  background: /*linear-gradient(140deg,#ffd900,#FFD01D)*/#2f89fc;
+  background: #2f89fc;
   box-sizing: border-box;
 }
 
@@ -246,14 +246,7 @@ height: 58rpx; */
   position: relative;
 }
 
-.border-b0 {
-  border-bottom: 0;
-}
 
-.mr-b {
-  width: 100%;
-  background-color: #f9f9f9;
-}
 
 .cms-tit {
   margin: 15rpx 0;
@@ -329,15 +322,6 @@ height: 58rpx; */
   display: none;
 }
 
-.mask-scrollbar {
-  height: 30rpx;
-  position: absolute;
-  bottom: 0;
-  left: -30rpx;
-  right: 0rpx;
-  background-color: #fff;
-}
-
 .cms-cont .mstOnePic-img {
   height: 35vh;
   width: 100%;
@@ -383,6 +367,7 @@ height: 58rpx; */
 }
 
 .top-Nav2-item {
+  box-shadow:2rpx 4rpx 80rpx #c2c2c2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -394,6 +379,7 @@ height: 58rpx; */
 }
 
 .top-Nav2-item2 {
+  box-shadow:2rpx 4rpx 80rpx #c2c2c2;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -13,7 +13,7 @@
 var Api = require('../../utils/api.js');
 var util = require('../../utils/util.js');
 var WxParse = require('../../wxParse/wxParse.js');
-var wxApi = require('../../utils/wxApi.js')
+var wxApi = require('../../utils/wxApi.js');
 var wxRequest = require('../../utils/wxRequest.js')
 import config from '../../utils/config.js'
 var pageCount = config.getPageCount;
@@ -96,7 +96,6 @@ Page({
     
   },
   onReachBottom: function () {  
-
       var self = this;
       if (!self.data.isLastPage) {
           self.setData({
@@ -116,13 +115,11 @@ Page({
     self.fetchPostsData(self.data);
     self.setData({
         topNav: config.getIndexNav
-
     });
        
   },
   onShow: function (options){
       wx.setStorageSync('openLinkCount', 0);
-
   },  
   fetchTopFivePosts: function () {
     var self = this;
@@ -189,8 +186,13 @@ Page({
     var getPostsRequest = wxRequest.getRequest(Api.getPosts(data));
     getPostsRequest
         .then(response => {
+          // console.log(response);
             if (response.statusCode === 200) {
-
+              for (var i = 0; i < response.data.length; i++) {
+                var rendered = response.data[i].excerpt.rendered;
+                var res = WxParse.wxParse('rendered', 'html', rendered, self, 5, true);
+                response.data[i].excerpt.rendered = res;
+              }
                 if (response.data.length < pageCount) {
                     self.setData({
                         isLastPage: true
@@ -199,23 +201,20 @@ Page({
                 self.setData({
                     floatDisplay: "block",
                     postsList: self.data.postsList.concat(response.data.map(function (item) {
-
                         var strdate = item.date
                         if (item.category_name != null) {
-
                             item.categoryImage = "../../images/category.png";
                         }
                         else {
                             item.categoryImage = "";
                         }
-
                         if (item.post_thumbnail_image == null || item.post_thumbnail_image == '') {
                             item.post_thumbnail_image = "../../images/logo700.png";
                         }
                         item.date = util.cutstr(strdate, 10, 1);
+                        // console.log(item);
                         return item;
                     })),
-
                 });
                 setTimeout(function () {
                     wx.hideLoading();
@@ -239,13 +238,10 @@ Page({
                     })
                 }
             }
-
-
         })
         .catch(function (response)
         {
             if (data.page == 1) {
-
                 self.setData({
                     showerror: "block",
                     floatDisplay: "none"
@@ -253,6 +249,7 @@ Page({
 
             }
             else {
+              console.log(response);
                 wx.showModal({
                     title: '加载失败',
                     content: '加载数据失败,请重试.',
@@ -262,7 +259,6 @@ Page({
                     page: data.page - 1
                 });
             }
-
         })
         .finally(function (response) {
             wx.hideLoading();

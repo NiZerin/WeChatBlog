@@ -7,7 +7,7 @@
 		"minified": true,
 		"newFeature": true,
 		"nodeModules": false,
-		"autoAudits": true,
+		"autoAudits": false,
 		"uglifyFileName": true
 	},
 	"compileType": "miniprogram",

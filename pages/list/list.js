@@ -182,10 +182,13 @@ Page({
     });
 
     var getPostsRequest = wxRequest.getRequest(Api.getPosts(data));
-
     getPostsRequest.then(response =>{
-
         if (response.statusCode === 200) {
+          for (let i = 0; i < response.data.length; i++) {
+            var rendered = response.data[i].excerpt.rendered;
+            let res = WxParse.wxParse('rendered', 'html', rendered, this, 5, true);
+            response.data[i].excerpt.rendered = res;
+          }
             if (response.data.length < pageCount) {
                 self.setData({
                     isLastPage: true
@@ -222,7 +225,6 @@ Page({
         }
         else {
             if (response.data.code == "rest_post_invalid_page_number") {
-
                 self.setData({
                     isLastPage: true
                 });
@@ -252,13 +254,10 @@ Page({
                 content: '加载数据失败,请重试.',
                 showCancel: false,
             });
-
-
             self.setData({
                 page: data.page - 1
             });
         }
-
     })
         .finally(function () {
             wx.hideLoading();

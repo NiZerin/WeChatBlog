@@ -10,7 +10,7 @@
  * Copyright (c) 2017 https://www.iacblog.com/ All rights reserved.
  *
  */-->
-<import src="../../templates/common-list.wxml" />
+<import src="../../templates/top-list.wxml" />
 <import src="../../templates/copyright.wxml" />
 
 
@@ -32,7 +32,7 @@
     </view>
 
     <view style="display:{{showallDisplay}}">
-        <view class="common-list">
+        <view class="top-list">
             <block wx:key="id" wx:for="{{postsList}}">
                 <view class="list-item has-img" index="{{index}}" id="{{item.post_id}}" bindtap="redictDetail">
                     <view class="content-title">
