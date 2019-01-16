@@ -75,13 +75,13 @@
 }
 
 .common-list .list-item {
-  box-shadow:2rpx 4rpx 80rpx #c2c2c2;
+  box-shadow:2rpx 4rpx 40rpx #c2c2c2;
   border-radius: 8px;
   position: relative;
   padding: 20rpx;
   min-height: 150rpx;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .common-list .list-item.has-img image.cover {
@@ -111,10 +111,11 @@
   color: #fff;
 }
 
-.common-list .list-item.has-img .content-date {
-  margin-left: 30%;
+.common-list .list-item .content-date .cate{
+  font-weight: bold;
+  color: #676767;
+  font-size: 30rpx;
 }
-
 .common-list .list-item.has-img .content-date image {
   width: 24rpx;
   height: 24rpx;
@@ -146,6 +147,7 @@
   font-weight: 400;
   color: #969696;
 }
+
 /*common list end */
 
 .showerror {
