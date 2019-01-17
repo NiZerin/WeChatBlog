@@ -186,11 +186,12 @@ Page({
     var getPostsRequest = wxRequest.getRequest(Api.getPosts(data));
     getPostsRequest
         .then(response => {
-          // console.log(response);
             if (response.statusCode === 200) {
               for (var i = 0; i < response.data.length; i++) {
+                // console.log(response.data[i].excerpt.rendered);
                 var rendered = response.data[i].excerpt.rendered;
                 var res = WxParse.wxParse('rendered', 'html', rendered, self, 5, true);
+                // console.log(res);
                 response.data[i].excerpt.rendered = res;
               }
                 if (response.data.length < pageCount) {

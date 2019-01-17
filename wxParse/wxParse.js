@@ -28,7 +28,7 @@ wx.getSystemInfo({
 /**
  * 主函数入口区
  **/
-function wxParse(bindName = 'wxParseData', type='html', data='<div class="color:red;">数据不能为空</div>', target,imagePadding,isdeac = false) {
+function wxParse(bindName = 'wxParseData', type='html', data='<div class="color:red;">数据不能为空</div>', target,imagePadding,isdesc = false) {
   var that = target;
   var transData = {};//存放转化后的数据
   if (type == 'html') {
@@ -52,7 +52,7 @@ function wxParse(bindName = 'wxParseData', type='html', data='<div class="color:
   that.wxParseImgLoad = wxParseImgLoad;
   that.wxParseImgTap = wxParseImgTap;
   // console.log(isdeac);
-  if(isdeac){
+  if(isdesc){
     return transData.nodes[0].nodes[0].text;
   }
 }
