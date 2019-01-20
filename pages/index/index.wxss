@@ -361,7 +361,7 @@ swiper .swiper-desc {
 .top-Nav2 {
   display: flex;
   flex-direction: row;
-  padding: 24rpx;
+  padding: 10rpx;
   background: #fff;
   justify-content: space-between;
 }
