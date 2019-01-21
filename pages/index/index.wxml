@@ -81,13 +81,13 @@
           <text>Vue</text>
         </view>
       </navigator>
-              <navigator url="../../pages/list/list?categoryID=26" hover-class='none'>
+              <navigator url="../../pages/list/list?categoryID=39" hover-class='none'>
           <view class='.top-Nav2-item'>
            <image src='../../images/React.png'></image>
           <text>React</text>
         </view>
       </navigator>
-              <navigator url="../../pages/list/list?categoryID=26" hover-class='none'>
+              <navigator url="../../pages/list/list?categoryID=4" hover-class='none'>
           <view class='.top-Nav2-item'>
            <image src='../../images/PHP.png'></image>
           <text>PHP</text>
