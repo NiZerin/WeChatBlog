@@ -62,30 +62,39 @@
       </form>
    
 <!--图标导航-->
-<view class="container">
+  <view class="container">
     <view class="cms-tit">
       <view class="cms-tit-left"></view>
       <view class="cms-tit-txt">猜你喜欢</view>
       <view class="cms-tit-more" data-foodlink="yeehee"> </view>
     </view>
-    <view class='top-Nav2'>
-          <navigator url='../hot/hot' hover-class='none'>
-            <view class="top-Nav2-item">
-              <view class="top-Nav2-item-word">
-                <text>排行榜单</text>
-              </view>
-            </view>
-          </navigator>
-          <navigator url="../../pages/list/list?categoryID=26" hover-class='none'>
-            <view class="top-Nav2-item2">
-              <view class="top-Nav2-item-word">
-                <text>VUE</text>
-              </view>
-            </view>
-          </navigator>
+  <view class='top-Nav2'>
+      <navigator url='../hot/hot' hover-class='none'>
+            <view class='.top-Nav2-item'>
+             <image src='../../images/star.png'></image>
+            <text>热门排行</text>
+           </view>
+        </navigator>
+        <navigator url="../../pages/list/list?categoryID=26" hover-class='none'>
+          <view class='.top-Nav2-item'>
+           <image src='../../images/Vue.png'></image>
+          <text>Vue</text>
         </view>
-
+      </navigator>
+              <navigator url="../../pages/list/list?categoryID=26" hover-class='none'>
+          <view class='.top-Nav2-item'>
+           <image src='../../images/React.png'></image>
+          <text>React</text>
+        </view>
+      </navigator>
+              <navigator url="../../pages/list/list?categoryID=26" hover-class='none'>
+          <view class='.top-Nav2-item'>
+           <image src='../../images/PHP.png'></image>
+          <text>PHP</text>
+        </view>
+      </navigator>
   </view>
+</view>
 <!--图标导航 end>
 
 

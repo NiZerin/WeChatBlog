@@ -8,18 +8,14 @@
  * 开源协议：MIT
  * Copyright (c) 2017 https://www.iacblog.com/ All rights reserved.
  */
-swiper{
 
-}
-swiper-itme{
 
-}
 .scroll-view {
   width: 100%;
   white-space: normal;
 }
 .index-container {
-  /* padding: 0 24rpx; */
+  margin-top: 15px;
   background-color: #fff;
 }
 
@@ -29,7 +25,6 @@ swiper-itme{
   font-size: 30rpx;
   line-height: 40rpx;
   color: #757575;
-  /* margin-top: 5rpx; */
 }
 
 /*   index   swiper  */
@@ -247,7 +242,6 @@ swiper .swiper-desc {
 }
 
 
-
 .cms-tit {
   margin: 15rpx 0;
   position: relative;
@@ -265,7 +259,7 @@ swiper .swiper-desc {
   line-height: 34rpx;
   margin-right: 12rpx;
   margin-bottom: -4rpx;
-  background: /*linear-gradient(140deg,#ffd900,#FFD01D)*/#2f89fc;
+  background: #2f89fc;
   box-sizing: border-box;
   border-radius:20rpx;
 
@@ -297,109 +291,29 @@ swiper .swiper-desc {
   right: 30rpx;
 }
 
-.cms-cont {
-  position: relative;
-  white-space: nowrap;
-  padding-bottom: 2rpx;
-  width: 100%;
-  display: inline-block;
-  margin-right: 24rpx;
-}
-
-.cms-cont:last-child {
-  margin-right: 0rpx;
-}
-
-.cms-scroll {
-  padding: 20rpx 10rpx 40rpx 30rpx;
-  margin-left: -30rpx;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-}
-
-.cms-scroll::-webkit-scrollbar {
-  display: none;
-}
-
-.cms-cont .mstOnePic-img {
-  height: 35vh;
-  width: 100%;
-  margin-top: 20rpx;
-  border-radius: 8rpx;
-}
-
-.cms-cont .img-text {
-  width: auto;
-  position: absolute;
-  bottom: 20rpx;
-  left: 20rpx;
-  color: #fff;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.35);
-  border-radius: 30rpx;
-}
-
-.mstTwoPicsPerRow-item:nth-child(even) .img-text {
-  left: 30rpx;
-}
-
-.cms-cont .img-text-one {
-  width: 650rpx;
-  height: 80rpx;
-}
-
-.cms-cont .enEdge {
-  bottom: 30rpx;
-  left: 30rpx;
-  width: 630rpx;
-}
-
 
 .top-Nav2 {
   display: flex;
   flex-direction: row;
   padding: 10rpx;
-  background: #fff;
-  justify-content: space-between;
+  justify-content:center;
+  margin-bottom: 10px;
 }
 
 .top-Nav2-item {
-  box-shadow:2rpx 4rpx 80rpx #c2c2c2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 339rpx;
-  height: 160rpx;
-  border-radius: 8rpx;
-  background-image: url(http://wx2.sinaimg.cn/mw690/d0cdcf72gy1fxkemocghrj209f04gmx2.jpg);
-  background-size:100%;
+  margin:0 20px 0 20px;
 }
 
-.top-Nav2-item2 {
-  box-shadow:2rpx 4rpx 80rpx #c2c2c2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 339rpx;
-  height: 160rpx;
-  border-radius: 8rpx;
-  background-image: url(http://wx2.sinaimg.cn/mw690/d0cdcf72gy1fxkemkkrkbj209f04g3yp.jpg);
-  background-size:100%;
+.top-Nav2-item image{
+  width: 100rpx;
+  height: 100rpx;
 }
 
-.top-Nav2-item-word {
-  display: flex;
-  justify-content: center;
+.top-Nav2-item text {
   align-items: center;
   line-height: 20rpx;
   font-size: 24rpx;
   font-weight: 500;
-  height: 60rpx;
-  width: 200rpx;
-  background-color: #fff;
-  border-radius: 30rpx;
-  border: 1rpx #c4c4c4 solid;
+  display: block;
+  text-align: center;
 }
