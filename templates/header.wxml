@@ -14,7 +14,7 @@
   <view class="header">
     <image src="../../images/logo.png" style="height:200rpx;width:400rpx"></image>
     <view style='margin-top:40rpx'>
-      守望生活, 审视自我,宁静雅致的小轩馆.
+      刻意学习，每日精进，茁壮成长！
     </view>
   </view>
 </template>
