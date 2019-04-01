@@ -116,7 +116,8 @@ wxParse丶ZanUI丶VantuUI
 
 
 #### 开源协议
-[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
+[![LICENSE](https://img.shields.io/badge/license-NPL%20(The%20996%20Prohibited%20License)-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
+
 
 本项目遵循开源协议为 [Apache License 2.0](https://github.com/CrazyNing98/WeChatMiniProgram-Blog/blob/master/LICENSE)
 
