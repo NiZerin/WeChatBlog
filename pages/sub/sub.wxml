@@ -1,0 +1,3 @@
+<!--pages/sub/sub.wxml-->
+<text>pages/sub/sub.wxml</text>
+<template is="tempCommonList" data="{{postList}}" />
