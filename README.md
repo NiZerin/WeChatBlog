@@ -5,6 +5,14 @@
 
 
 
+#### 在线体验：
+
+![https://cdn.iacblog.com/wx/QRLogo.jpg](https://cdn.iacblog.com/wx/QRLogo.jpg)
+
+如果觉得项目不错，可以点个Star哦😉😉😉
+
+
+
 #### 说明：
 
 本项目为小程序入门项目，需要一定的前端基础及一点后端知识，项目可能不太好，欢迎大家吐槽，纯萌新小白勿入，最后祝大家Coded愉快。
@@ -98,12 +106,6 @@ https://github.com/CrazyNing98/WeChatMiniProgram-Blog/archive/master.zip
 ![https://cdn.iacblog.com/wx/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20190115145911.png](https://cdn.iacblog.com/wx/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20190115145911.png)
 
 ![https://cdn.iacblog.com/wx/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20190115145924.png](https://cdn.iacblog.com/wx/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20190115145924.png)
-
-#### 在线体验：
-
-![https://cdn.iacblog.com/wx/QRLogo.jpg](https://cdn.iacblog.com/wx/QRLogo.jpg)
-
-如果觉得项目不错，可以点个Star哦😉😉😉
 
 
 
