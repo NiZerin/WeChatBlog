@@ -190,6 +190,9 @@ Page({
               for (var i = 0; i < response.data.length; i++) {
                 // console.log(response.data[i].excerpt.rendered);
                 var rendered = response.data[i].excerpt.rendered;
+                if (rendered === '') {
+                  continue
+                }
                 var res = WxParse.wxParse('rendered', 'html', rendered, self, 5, true);
                 // console.log(res);
                 response.data[i].excerpt.rendered = res;
