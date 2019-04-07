@@ -36,6 +36,7 @@
   <view class='user-cell'>
     <van-cell-group>
       <van-cell title="关于作者" is-link url="../about/about" />
+      <van-cell title="清除缓存" is-link bindtap='clearStorage' />
     </van-cell-group>
   </view>
   <template is="login-popup" data="{{show: isLoginPopup, userInfo: userInfo}}"></template>

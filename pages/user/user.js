@@ -23,12 +23,36 @@ Page({
     readLogs: [],
     topBarItems: [
       // id name selected 选中状态
-      { id: '1', name: '浏览', selected: true },
-      { id: '2', name: '评论', selected: false },
-      { id: '3', name: '点赞', selected: false },
-      { id: '4', name: '鼓励', selected: false },
-      { id: '5', name: '订阅', selected: false },
-      { id: '6', name: '言论', selected: false }
+      {
+        id: '1',
+        name: '浏览',
+        selected: true
+      },
+      {
+        id: '2',
+        name: '评论',
+        selected: false
+      },
+      {
+        id: '3',
+        name: '点赞',
+        selected: false
+      },
+      {
+        id: '4',
+        name: '鼓励',
+        selected: false
+      },
+      {
+        id: '5',
+        name: '订阅',
+        selected: false
+      },
+      {
+        id: '6',
+        name: '言论',
+        selected: false
+      }
     ],
     tab: '1',
     showerror: "none",
@@ -42,40 +66,48 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function(options) {
     var self = this;
     self.fetchPostsData('1');
     Auth.setUserInfoData(self);
     Auth.checkLogin(self);
     wx.setNavigationBarTitle({
       title: '我的个人中心',
-      success: function (res) {
+      success: function(res) {
         // success
       }
     });
 
   },
 
-  onReady: function () {
+  onReady: function() {
     var self = this;
     Auth.checkSession(self, 'isLoginNow');
   },
-  agreeGetUser: function (e) {
+  agreeGetUser: function(e) {
     let self = this;
     Auth.checkAgreeGetUser(e, app, self, '0');
 
   },
 
+  // 清除缓存
+  clearStorage: function(e) {
+    Auth.logout()
+    wx.reLaunch({
+      url: '../index/index'
+    })
+  },
+
+
   // 跳转至查看文章详情
-  redictDetail: function (e) {
+  redictDetail: function(e) {
     // console.log('查看文章');
     var id = e.currentTarget.id;
     var itemtype = e.currentTarget.dataset.itemtype;
     var url = "";
     if (itemtype == "1") {
       url = '../list/list?categoryID=' + id;
-    }
-    else {
+    } else {
       url = '../detail/detail?id=' + id;
 
     }
@@ -84,7 +116,7 @@ Page({
       url: url
     })
   },
-  onTapTag: function (e) {
+  onTapTag: function(e) {
     var self = this;
     var tab = e.currentTarget.id;
     var topBarItems = self.data.topBarItems;
@@ -107,21 +139,21 @@ Page({
       this.fetchPostsData("1");
     }
   },
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
     var title = "分享我在“" + config.getWebsiteName + "浏览、评论、点赞、鼓励的文章";
     var path = "pages/readlog/readlog";
     return {
       title: title,
       path: path,
-      success: function (res) {
+      success: function(res) {
         // 转发成功
       },
-      fail: function (res) {
+      fail: function(res) {
         // 转发失败
       }
     }
   },
-  fetchPostsData: function (tab) {
+  fetchPostsData: function(tab) {
     self = this;
     self.setData({
       showerror: 'none',
@@ -132,8 +164,7 @@ Page({
     if (tab != '1') {
       if (self.data.openid) {
         var openid = self.data.openid;
-      }
-      else {
+      } else {
         Auth.checkSession(self, 'isLoginNow');
         return;
       }
@@ -142,7 +173,7 @@ Page({
     }
     if (tab == '1') {
       self.setData({
-        readLogs: (wx.getStorageSync('readLogs') || []).map(function (log) {
+        readLogs: (wx.getStorageSync('readLogs') || []).map(function(log) {
           count++;
           return log;
         })
@@ -152,8 +183,7 @@ Page({
           shownodata: 'block'
         });
       }
-    }
-    else if (tab == '2') {
+    } else if (tab == '2') {
       self.setData({
         readLogs: []
       });
@@ -161,7 +191,7 @@ Page({
       getMyCommentsPosts.then(response => {
         if (response.statusCode == 200) {
           self.setData({
-            readLogs: self.data.readLogs.concat(response.data.data.map(function (item) {
+            readLogs: self.data.readLogs.concat(response.data.data.map(function(item) {
               count++;
               item[0] = item.post_id;
               item[1] = item.post_title;
@@ -173,8 +203,7 @@ Page({
               shownodata: 'block'
             });
           }
-        }
-        else {
+        } else {
           console.log(response);
           self.setData({
             showerror: 'block'
@@ -182,8 +211,7 @@ Page({
 
         }
       })
-    }
-    else if (tab == '3') {
+    } else if (tab == '3') {
       self.setData({
         readLogs: []
       });
@@ -191,7 +219,7 @@ Page({
       getMylikePosts.then(response => {
         if (response.statusCode == 200) {
           self.setData({
-            readLogs: self.data.readLogs.concat(response.data.data.map(function (item) {
+            readLogs: self.data.readLogs.concat(response.data.data.map(function(item) {
               count++;
               item[0] = item.post_id;
               item[1] = item.post_title;
@@ -205,8 +233,7 @@ Page({
               shownodata: 'block'
             });
           }
-        }
-        else {
+        } else {
           console.log(response);
           self.setData({
             showerror: 'block'
@@ -215,8 +242,7 @@ Page({
         }
       })
 
-    }
-    else if (tab == '4') {
+    } else if (tab == '4') {
       self.setData({
         readLogs: []
       });
@@ -225,7 +251,7 @@ Page({
       getMyPraisePosts.then(response => {
         if (response.statusCode == 200) {
           self.setData({
-            readLogs: self.data.readLogs.concat(response.data.data.map(function (item) {
+            readLogs: self.data.readLogs.concat(response.data.data.map(function(item) {
               count++;
               item[0] = item.post_id;
               item[1] = item.post_title;
@@ -238,8 +264,7 @@ Page({
               shownodata: 'block'
             });
           }
-        }
-        else {
+        } else {
           console.log(response);
           this.setData({
             showerror: 'block'
@@ -248,8 +273,7 @@ Page({
         }
       })
 
-    }
-    else if (tab == '5') {
+    } else if (tab == '5') {
       self.setData({
         readLogs: []
       });
@@ -260,7 +284,7 @@ Page({
           var usermetaList = response.data.usermetaList;
           if (usermetaList) {
             self.setData({
-              readLogs: self.data.readLogs.concat(usermetaList.map(function (item) {
+              readLogs: self.data.readLogs.concat(usermetaList.map(function(item) {
                 count++;
                 item[0] = item.ID;
                 item[1] = item.post_title;
@@ -275,8 +299,7 @@ Page({
               shownodata: 'block'
             });
           }
-        }
-        else {
+        } else {
           console.log(response);
           this.setData({
             showerror: 'block'
@@ -286,8 +309,7 @@ Page({
       })
 
 
-    }
-    else if (tab == '6') {
+    } else if (tab == '6') {
       self.setData({
         readLogs: []
       });
@@ -295,7 +317,7 @@ Page({
       getNewComments.then(response => {
         if (response.statusCode == 200) {
           self.setData({
-            readLogs: self.data.readLogs.concat(response.data.map(function (item) {
+            readLogs: self.data.readLogs.concat(response.data.map(function(item) {
               count++;
               item[0] = item.post;
               item[1] = util.removeHTML(item.content.rendered + '(' + item.author_name + ')');
@@ -309,15 +331,14 @@ Page({
             });
           }
 
-        }
-        else {
+        } else {
           console.log(response);
           self.setData({
             showerror: 'block'
           });
 
         }
-      }).catch(function () {
+      }).catch(function() {
         console.log(response);
         self.setData({
           showerror: 'block'
@@ -327,13 +348,16 @@ Page({
     }
   },
   closeLoginPopup() {
-    this.setData({ isLoginPopup: false });
+    this.setData({
+      isLoginPopup: false
+    });
   },
   openLoginPopup() {
-    this.setData({ isLoginPopup: true });
-  }
-  ,
-  confirm: function () {
+    this.setData({
+      isLoginPopup: true
+    });
+  },
+  confirm: function() {
     this.setData({
       'dialog.hidden': true,
       'dialog.title': '',
