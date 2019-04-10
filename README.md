@@ -22,13 +22,13 @@
 #### 使用方法：
 
 ```
-git clone https://github.com/CrazyNing98/WeChatMiniProgram-Blog.git
+git clone https://github.com/NiZerin/WeChatBlog.git
 ```
 
 or
 
 ```
-https://github.com/CrazyNing98/WeChatMiniProgram-Blog/archive/master.zip
+https://github.com/NiZerin/WeChatBlog/archive/master.zip
 ```
 
 ##### 在微信开发者工具 -->选择你刚clone或解压的目录
