@@ -17,7 +17,7 @@
 <import src="../../templates/login-popup.wxml" />
 
 
-
+<view wx:if="{{condition}}" class='error'>文章解析失败，请在电脑上查看此文章~~~</view>
 <view class="container">
     <view class="container">
         <view class="content-article-detail" style="display:{{display}}">

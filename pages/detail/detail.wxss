@@ -11,6 +11,16 @@
 @import "../../wxParse/wxParse.wxss";
 @import "../../templates/modal-view/modal-view.wxss";
 
+.error{
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-size: 16px;
+  color: #c5c5c5;
+  text-align: center;
+}
+
+
 .content-article-detail {
   border-bottom: 1px solid #eee;
   margin-top: 40rpx;
