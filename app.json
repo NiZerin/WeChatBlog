@@ -18,7 +18,7 @@
     "window": {
         "backgroundTextStyle": "dark",
         "navigationBarBackgroundColor": "#118fff",
-        "navigationBarTitleText": "泽林博客",
+        "navigationBarTitleText": "PHP开源Hub",
         "navigationBarTextStyle": "white"
     },
     "tabBar": {

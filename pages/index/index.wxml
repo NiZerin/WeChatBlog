@@ -52,50 +52,50 @@
 
   <!-- 首页搜索框 -->
 
-      <form catchsubmit="formSubmit" catchreset="formReset" id="search-form">
-        <view class="search-pancel">
-          <input value="" id="search-input" name="input" confirm-type="search" class="search-input" placeholder="搜索你感兴趣的内容..." bindconfirm="formSubmit"></input>
-            <button class="search-button" form-type="submit" size="mini" plain="true">
-              <icon type="search" color="#959595" size="12" />
-            </button>
-        </view>
-      </form>
-   
-<!--图标导航-->
+  <form catchsubmit="formSubmit" catchreset="formReset" id="search-form">
+    <view class="search-pancel">
+      <input value="" id="search-input" name="input" confirm-type="search" class="search-input" placeholder="搜索你感兴趣的内容..." bindconfirm="formSubmit"></input>
+      <button class="search-button" form-type="submit" size="mini" plain="true">
+        <icon type="search" color="#959595" size="12" />
+      </button>
+    </view>
+  </form>
+
+  <!--图标导航-->
   <view class="container">
     <view class="cms-tit">
       <view class="cms-tit-left"></view>
       <view class="cms-tit-txt">猜你喜欢</view>
       <view class="cms-tit-more" data-foodlink="yeehee"> </view>
     </view>
-  <view class='top-Nav2'>
+    <view class='top-Nav2'>
       <navigator url='../hot/hot' hover-class='none'>
-            <view class='.top-Nav2-item'>
-             <image src='../../images/star.png'></image>
-            <text>热门排行</text>
-           </view>
-        </navigator>
-        <navigator url="../../pages/list/list?categoryID=26" hover-class='none'>
-          <view class='.top-Nav2-item'>
-           <image src='../../images/Vue.png'></image>
-          <text>Vue</text>
+        <view class='.top-Nav2-item'>
+          <image src='../../images/star.png'></image>
+          <text>热门排行</text>
         </view>
       </navigator>
-              <navigator url="../../pages/list/list?categoryID=39" hover-class='none'>
-          <view class='.top-Nav2-item'>
-           <image src='../../images/React.png'></image>
-          <text>React</text>
-        </view>
-      </navigator>
-              <navigator url="../../pages/list/list?categoryID=4" hover-class='none'>
-          <view class='.top-Nav2-item'>
-           <image src='../../images/PHP.png'></image>
+      <navigator url="../../pages/list/list?categoryID=4" hover-class='none'>
+        <view class='.top-Nav2-item'>
+          <image src='../../images/PHP.png'></image>
           <text>PHP</text>
         </view>
       </navigator>
+      <navigator url="../../pages/list/list?categoryID=26" hover-class='none'>
+        <view class='.top-Nav2-item'>
+          <image src='../../images/Vue.png'></image>
+          <text>Vue</text>
+        </view>
+      </navigator>
+      <navigator url="../../pages/list/list?categoryID=39" hover-class='none'>
+        <view class='.top-Nav2-item'>
+          <image src='../../images/React.png'></image>
+          <text>React</text>
+        </view>
+      </navigator>
+    </view>
   </view>
-</view>
-<!--图标导航 end>
+  <!--图标导航 end>
 
 
   <!-- 网友推荐 -->
@@ -122,9 +122,9 @@
       </block>
     </view>
   </view> -->
-  
+
   <!-- 精选资讯 start-->
-<!--
+  <!--
   <view class="container">
     <view class="cms-tit">
       <view class="cms-tit-left"></view>
