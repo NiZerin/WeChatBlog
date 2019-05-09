@@ -17,13 +17,13 @@
     ],
     "window": {
         "backgroundTextStyle": "dark",
-        "navigationBarBackgroundColor": "#118fff",
+        "navigationBarBackgroundColor": "#6082BB",
         "navigationBarTitleText": "PHP开源Hub",
         "navigationBarTextStyle": "white"
     },
     "tabBar": {
         "color": "#9BABBA",
-        "selectedColor": "#495056",
+        "selectedColor": "#6082BB",
         "borderStyle": "white",
         "backgroundColor": "#ffffff",
         "list": [
@@ -37,7 +37,7 @@
                 "pagePath": "pages/topic/topic",
                 "iconPath": "images/tar-topic.png",
                 "selectedIconPath": "images/tar-topic-on.png",
-                "text": "专题"
+                "text": "专栏"
             },
             {
                 "pagePath": "pages/user/user",
