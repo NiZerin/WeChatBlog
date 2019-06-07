@@ -113,7 +113,7 @@ https://github.com/NiZerin/WeChatBlog/archive/master.zip
 
 守望轩 小程序框架
 
-wxParse丶ZanUI丶VantuUI
+wxParse丶ZanUI丶VantUI
 
 
 
