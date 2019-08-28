@@ -1,58 +1,60 @@
 {
-	"description": "项目配置文件。",
-	"setting": {
-		"urlCheck": true,
-		"es6": true,
-		"postcss": true,
-		"minified": true,
-		"newFeature": true,
-		"nodeModules": false,
-		"autoAudits": false,
-		"uglifyFileName": true
-	},
-	"compileType": "miniprogram",
-	"libVersion": "2.6.2",
-	"appid": "wxea3b3b52ffe574f2",
-	"projectname": "PHP开源Hub",
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": [
-				{
-					"name": "test",
-					"pathName": "",
-					"title": "",
-					"cacheKey": ""
-				}
-			]
-		},
-		"conversation": {
-			"current": 0,
-			"list": [
-				{
-					"name": "test",
-					"query": "",
-					"boxQI": "",
-					"service": {}
-				}
-			]
-		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"list": []
-		},
-		"miniprogram": {
-			"current": 0,
-			"list": [
-				{
-					"id": -1,
-					"name": "更新模式",
-					"pathName": "pages/index/index"
-				}
-			]
-		}
-	}
+  "description": "项目配置文件。",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "uglifyFileName": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.6.2",
+  "appid": "wxea3b3b52ffe574f2",
+  "projectname": "PHP%E5%BC%80%E6%BA%90Hub",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": [
+        {
+          "name": "test",
+          "pathName": "",
+          "title": "",
+          "cacheKey": ""
+        }
+      ]
+    },
+    "conversation": {
+      "current": 0,
+      "list": [
+        {
+          "name": "test",
+          "query": "",
+          "boxQI": "",
+          "service": {}
+        }
+      ]
+    },
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "miniprogram": {
+      "current": 0,
+      "list": [
+        {
+          "id": -1,
+          "name": "更新模式",
+          "pathName": "pages/index/index"
+        }
+      ]
+    }
+  }
 }

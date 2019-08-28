@@ -11,7 +11,7 @@
 @import "../../wxParse/wxParse.wxss";
 @import "../../templates/modal-view/modal-view.wxss";
 
-.error{
+.error {
   width: 90%;
   margin: 0 auto;
   padding: 20px 0;
@@ -19,7 +19,6 @@
   color: #c5c5c5;
   text-align: center;
 }
-
 
 .content-article-detail {
   border-bottom: 1px solid #eee;
@@ -33,7 +32,7 @@
   font-weight: bold;
   outline: none;
   color: #3a4040;
-  margin-bottom: 24rpx; 
+  margin-bottom: 24rpx;
 }
 
 .entry-gap-like {
@@ -42,6 +41,7 @@
   background-color: #4c4c4c;
   margin-bottom: 32rpx;
 }
+
 .entry-gap-zan {
   width: 70rpx;
   height: 2px;
@@ -66,8 +66,7 @@
   font-weight: normal;
   outline: none;
   margin-bottom: 30rpx;
-  border-bottom:1px solid #eee;
-
+  border-bottom: 1px solid #eee;
   /* border-bottom: 1px solid #ededed; *//* margin-left: 30rpx; */
 }
 
@@ -444,16 +443,16 @@
   color: #333;
 }
 */
-.share-button{
-  opacity: 0; 
-  position:absolute;
+
+.share-button {
+  opacity: 0;
+  position: absolute;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  top:0;
+  top: 0;
   left: 0;
-
 }
 
 .share-title {
@@ -613,34 +612,27 @@
 
 /*   end menu-box  */
 
-
-.pagination
-{
- font-weight: normal;
+.pagination {
+  font-weight: normal;
   font-size: 28rpx;
   line-height: 60rpx;
   color: #4c4c4c !important;
   border-bottom: 1px solid #eee;
-
 }
+
 .nav-previous {
-    float: left;
-    width: 80%;
+  float: left;
+  width: 80%;
 }
 
 .nav-next {
-    float: right;
-    text-align: right;
-    width: 80%;
-} 
+  float: right;
+  text-align: right;
+  width: 80%;
+}
 
 .canvas-box {
   position: fixed;
   top: 999999rpx;
   left: 0;
 }
-
-
-
-
-
