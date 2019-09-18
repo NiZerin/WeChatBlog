@@ -159,10 +159,12 @@
     <view class="canvas-box">
       <canvas style="width: 600px;height: 970px;" canvas-id="mycanvas" />
     </view>
+        <view class="adContainer">
+  <ad unit-id="adunit-b7fce7de127259cc" bindload="adLoad" binderror="adError" bindclose="adClose"></ad>
+</view>
     <view class="ditail-copyright" style="display:{{display}}">
       <template is="tempCopyright" />
     </view>
-
     <template is="login-popup" data="{{show: isLoginPopup, userInfo: userInfo}}"></template>
 
     <!--评论区-->
