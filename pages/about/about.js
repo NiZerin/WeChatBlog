@@ -18,7 +18,7 @@ var wxRequest = require('../../utils/wxRequest.js')
 var Auth = require('../../utils/auth.js');
 import config from '../../utils/config.js'
 var app = getApp();
-
+let interstitialAd = null
 
 Page({
   data: {
@@ -37,10 +37,25 @@ Page({
     isLoginPopup: false,
     openid: "",
     system: ""
-
-
   },
   onLoad: function(options) {
+    if (wx.createInterstitialAd) {
+      interstitialAd = wx.createInterstitialAd({
+        adUnitId: 'adunit-9fa574b054c9be1c'
+      })
+      interstitialAd.onLoad(() => {
+        console.log('onLoad event emit')
+      })
+      interstitialAd.onError((err) => {
+        console.log('onError event emit', err)
+      })
+      interstitialAd.onClose((res) => {
+        console.log('onClose event emit', res)
+      })
+      interstitialAd.show().catch((err) => {
+        console.error(err)
+      })
+    }
     var self = this;
     wx.setNavigationBarTitle({
       title: config.getWebsiteName + '-关于站长',
@@ -52,15 +67,16 @@ Page({
     Auth.checkLogin(self);
     this.fetchData(config.getAboutId);
     wx.getSystemInfo({
+
       success: function(t) {
         var system = t.system.indexOf('iOS') != -1 ? 'iOS' : 'Android';
         self.setData({
           system: system
         });
-
       }
     })
   },
+
   praise: function() {
 
     var self = this;
@@ -80,9 +96,7 @@ Page({
       wx.previewImage({
         urls: [src],
       });
-
     }
-
   },
   onPullDownRefresh: function() {
     var self = this;
@@ -96,7 +110,6 @@ Page({
     this.fetchData(config.getAboutId);
     //消除下刷新出现空白矩形的问题。
     wx.stopPullDownRefresh()
-
   },
   onShareAppMessage: function() {
     return {
@@ -122,7 +135,6 @@ Page({
     } else {
       self.copyLink(config.getDomain);
     }
-
   },
   copyLink: function(url) {
     //this.ShowHideMenu();
@@ -165,7 +177,6 @@ Page({
         }
       })
     } else {
-
       var slug = util.GetUrlFileName(href, domain);
       if (slug == 'index') {
         wx.switchTab({
@@ -188,13 +199,9 @@ Page({
               openLinkCount++;
               wx.setStorageSync('openLinkCount', openLinkCount);
             }
-
           })
-
       }
-
     }
-
   },
   agreeGetUser: function(e) {
     var userInfo = e.detail.userInfo;
@@ -227,7 +234,6 @@ Page({
     getPageRequest.then(response => {
         console.log(response);
         WxParse.wxParse('article', 'html', response.data.content.rendered, self, 5);
-
         self.setData({
           pageData: response.data,
           // wxParseData: WxParse('md',response.data.content.rendered)
@@ -237,13 +243,10 @@ Page({
           display: 'block'
         });
 
-
       }).then(res => {
         var getAllPraiseRequest = wxRequest.getRequest(Api.getAllPraiseUrl());
         getAllPraiseRequest.then(response => {
-
           if (response.data.status == '200') {
-
             var _avatarurls = response.data.avatarurls;
             var avatarurls = [];
             for (var i = 0; i < _avatarurls.length; i++) {
@@ -253,24 +256,18 @@ Page({
               }
               avatarurls[i] = avatarurl;
             }
-
             self.setData({
               praiseList: avatarurls
             });
-
           } else {
             console.log(response);
           }
-
-
         })
-
       })
       .then(res => {
         if (!app.globalData.isGetOpenid) {
           // auth.getUsreInfo();
         }
-
       })
   }
 })

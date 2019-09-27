@@ -15,6 +15,9 @@
   padding: 5rpx;
 }
 
+.adContainer {
+}
+
 .excerpt{
   color:#626262; 
   font-size:32rpx;
