@@ -30,17 +30,17 @@ Page({
     page: 1,
     search: '',
     categories: 0,
-    categoriesName:'',
-    categoriesImage:"", 
-    showerror:"none",
-    isCategoryPage:"none",
-    isSearchPage:"none",
+    categoriesName: '',
+    categoriesImage: "",
+    showerror: "none",
+    isCategoryPage: "none",
+    isSearchPage: "none",
     showallDisplay: "block",
     displaySwiper: "block",
     floatDisplay: "none",
-    searchKey:"",
+    searchKey: "",
   },
-  formSubmit: function (e) {
+  formSubmit: function(e) {
     var url = '../list/list'
     if (e.detail.value.input != '') {
       url = url + '?search=' + e.detail.value.input;
@@ -49,57 +49,52 @@ Page({
       url: url
     })
   },
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
     var title = "分享“泽林博客”";
-    var path =""
+    var path = ""
 
-    if (this.data.categories && this.data.categories != 0)
-  {
+    if (this.data.categories && this.data.categories != 0) {
       title += "的专题：" + this.data.categoriesList.name;
       path = 'pages/list/list?categoryID=' + this.data.categoriesList.id;
 
-  }
-  else
-  {
+    } else {
       title += "的搜索内容：" + this.data.searchKey;
       path = 'pages/list/list?search=' + this.data.searchKey;
-  }
+    }
 
 
     return {
       title: title,
       path: path,
-      success: function (res) {
+      success: function(res) {
         // 转发成功
       },
-      fail: function (res) {
+      fail: function(res) {
         // 转发失败
       }
     }
   },
-  onReachBottom: function () {
+  onReachBottom: function() {
 
-      var self = this;
-      if (!self.data.isLastPage) {
-          self.setData({
-              page: self.data.page + 1
-          });
-          console.log('当前页' + self.data.page);
-          this.fetchPostsData(self.data);
-      }
-      else {
-          console.log('最后一页');
-      }
-     
+    var self = this;
+    if (!self.data.isLastPage) {
+      self.setData({
+        page: self.data.page + 1
+      });
+      console.log('当前页' + self.data.page);
+      this.fetchPostsData(self.data);
+    } else {
+      console.log('最后一页');
+    }
+
   },
-  reload:function(e)
-  {
+  reload: function(e) {
     var self = this;
     if (self.data.categories && self.data.categories != 0) {
-      
+
       self.setData({
-       // categories: options.categoryID,
+        // categories: options.categoryID,
         isCategoryPage: "block",
         showallDisplay: "none",
         showerror: "none",
@@ -119,7 +114,7 @@ Page({
     self.fetchPostsData(self.data);
   },
   //加载分页
-  loadMore: function (e) {
+  loadMore: function(e) {
     var self = this;
     if (!self.data.isLastPage) {
       self.setData({
@@ -127,8 +122,7 @@ Page({
       });
       console.log('当前页' + self.data.page);
       this.fetchPostsData(self.data);
-    }
-    else {
+    } else {
       wx.showToast({
         title: '没有更多内容',
         mask: false,
@@ -136,36 +130,36 @@ Page({
       });
     }
   },
-  onLoad: function (options) {
+  onLoad: function(options) {
     var self = this;
     if (options.categoryID && options.categoryID != 0) {
       self.setData({
         categories: options.categoryID,
-        isCategoryPage:"block"
-        
-       
+        isCategoryPage: "block"
+
+
       });
       self.fetchCategoriesData(options.categoryID);
     }
     if (options.search && options.search != '') {
       wx.setNavigationBarTitle({
-        title: "搜索关键字："+options.search,
-        success: function (res) {
+        title: "搜索关键字：" + options.search,
+        success: function(res) {
           // success
         }
       });
       self.setData({
         search: options.search,
-        isSearchPage:"block",
+        isSearchPage: "block",
         searchKey: options.search
       })
 
       this.fetchPostsData(self.data);
-    }    
+    }
   },
   //获取文章列表数据
-  fetchPostsData: function (data) {
-    var self = this;  
+  fetchPostsData: function(data) {
+    var self = this;
     if (!data) data = {};
     if (!data.page) data.page = 1;
     if (!data.categories) data.categories = 0;
@@ -175,100 +169,96 @@ Page({
         postsList: []
       });
     };
-    
+
     wx.showLoading({
       title: '正在加载',
-      mask:true
+      mask: true
     });
 
     var getPostsRequest = wxRequest.getRequest(Api.getPosts(data));
-    getPostsRequest.then(response =>{
+    getPostsRequest.then(response => {
         if (response.statusCode === 200) {
           for (let i = 0; i < response.data.length; i++) {
             var rendered = response.data[i].excerpt.rendered;
             let res = WxParse.wxParse('rendered', 'html', rendered, this, 5, true);
             response.data[i].excerpt.rendered = res;
           }
-            if (response.data.length < pageCount) {
-                self.setData({
-                    isLastPage: true
-                });
-            };
+          if (response.data.length < pageCount) {
             self.setData({
-                floatDisplay: "block",
-                showallDisplay: "block",
-                postsList: self.data.postsList.concat(response.data.map(function (item) {
-                    var strdate = item.date
-                    if (item.category_name != null) {
-
-                        item.categoryImage = "../../images/topic.png";
-                    }
-                    else {
-                        item.categoryImage = "";
-                    }
-
-                    if (item.post_thumbnail_image == null || item.post_thumbnail_image == '') {
-                        item.post_thumbnail_image = '../../images/logo700.png';
-                    }
-                    item.date = util.cutstr(strdate, 10, 1);
-                    return item;
-                })),
-
+              isLastPage: true
             });
-            // setTimeout(function () {
-            //     wx.hideLoading();
+          };
+          self.setData({
+            floatDisplay: "block",
+            showallDisplay: "block",
+            postsList: self.data.postsList.concat(response.data.map(function(item) {
+              var strdate = item.date
+              if (item.category_name != null) {
 
-            // }, 1500);
+                item.categoryImage = "../../images/topic.png";
+              } else {
+                item.categoryImage = "";
+              }
+
+              if (item.post_thumbnail_image == null || item.post_thumbnail_image == '') {
+                item.post_thumbnail_image = '../../images/logo700.png';
+              }
+              item.date = util.cutstr(strdate, 10, 1);
+              return item;
+            })),
+
+          });
+          // setTimeout(function () {
+          //     wx.hideLoading();
+
+          // }, 1500);
 
 
 
+        } else {
+          if (response.data.code == "rest_post_invalid_page_number") {
+            self.setData({
+              isLastPage: true
+            });
+
+          } else {
+            wx.showToast({
+              title: response.data.message,
+              duration: 1500
+            })
+          }
         }
-        else {
-            if (response.data.code == "rest_post_invalid_page_number") {
-                self.setData({
-                    isLastPage: true
-                });
 
-            }
-            else {
-                wx.showToast({
-                    title: response.data.message,
-                    duration: 1500
-                })
-            }
-        }   
-
-    })
-    .catch(function(){        
+      })
+      .catch(function() {
         if (data.page == 1) {
 
-            self.setData({
-                showerror: "block",
-                floatDisplay: "none"
-            });
+          self.setData({
+            showerror: "block",
+            floatDisplay: "none"
+          });
 
+        } else {
+          wx.showModal({
+            title: '加载失败',
+            content: '加载数据失败,请重试.',
+            showCancel: false,
+          });
+          self.setData({
+            page: data.page - 1
+          });
         }
-        else {
-            wx.showModal({
-                title: '加载失败',
-                content: '加载数据失败,请重试.',
-                showCancel: false,
-            });
-            self.setData({
-                page: data.page - 1
-            });
-        }
-    })
-        .finally(function () {
-            wx.hideLoading();
+      })
+      .finally(function() {
+        wx.hideLoading();
 
-        })  
-  },  
+      })
+  },
 
 
 
   // 跳转至查看文章详情
-  redictDetail: function (e) {
+  redictDetail: function(e) {
     // console.log('查看文章');
     var id = e.currentTarget.id,
       url = '../detail/detail?id=' + id;
@@ -278,7 +268,7 @@ Page({
   },
 
   //获取分类列表
-  fetchCategoriesData: function (id) {
+  fetchCategoriesData: function(id) {
     var self = this;
     self.setData({
       categoriesList: []
@@ -286,35 +276,31 @@ Page({
 
     var getCategoryRequest = wxRequest.getRequest(Api.getCategoryByID(id));
 
-    getCategoryRequest.then(response =>{
+    getCategoryRequest.then(response => {
 
-        var catImage = "";
-        if (typeof (response.data.category_thumbnail_image) == "undefined" || response.data.category_thumbnail_image == "") {
-            catImage = "../../images/website.png";
+      var catImage = "";
+      if (typeof(response.data.category_thumbnail_image) == "undefined" || response.data.category_thumbnail_image == "") {
+        catImage = "../../images/website.png";
+      } else {
+        catImage = response.data.category_thumbnail_image;
+      }
+
+      self.setData({
+        categoriesList: response.data,
+        categoriesImage: catImage,
+        categoriesName: response.data.name
+      });
+
+      wx.setNavigationBarTitle({
+        title: response.data.name,
+        success: function(res) {
+          // success
         }
-        else {
-            catImage = response.data.category_thumbnail_image;
-        }
+      });
 
-        self.setData({
-            categoriesList: response.data,
-            categoriesImage: catImage,
-            categoriesName: response.data.name
-        });
-
-        wx.setNavigationBarTitle({
-            title: response.data.name,
-            success: function (res) {
-                // success
-            }
-        });
-
-        self.fetchPostsData(self.data); 
+      self.fetchPostsData(self.data);
 
     })
   },
 
 })
-
-
-

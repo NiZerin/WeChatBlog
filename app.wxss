@@ -27,12 +27,9 @@
   margin-bottom: 8rpx;
 }
 
-
- .wxParse-p
-{
+.wxParse-p {
   margin-top: 30rpx;
-} 
-
+}
 
 /*  more   */
 
@@ -54,7 +51,7 @@
 }
 
 .more-button::after {
-  border:none;
+  border: none;
 }
 
 .no-more {
@@ -75,7 +72,7 @@
 }
 
 .common-list .list-item {
-  box-shadow:2rpx 4rpx 40rpx #c2c2c2;
+  box-shadow: 2rpx 4rpx 40rpx #c2c2c2;
   border-radius: 8px;
   position: relative;
   padding: 20rpx;
@@ -111,11 +108,12 @@
   color: #fff;
 }
 
-.common-list .list-item .content-date .cate{
+.common-list .list-item .content-date .cate {
   font-weight: bold;
   color: #676767;
   font-size: 30rpx;
 }
+
 .common-list .list-item.has-img .content-date image {
   width: 24rpx;
   height: 24rpx;
@@ -130,12 +128,13 @@
   line-height: 1.2;
   font-weight: normal;
 }
-.common-list .content-desc{
+
+.common-list .content-desc {
   position: relative;
   top: -10px;
 }
 
-.common-list .content-desc text{
+.common-list .content-desc text {
   text-overflow: -o-ellipsis-lastline;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -180,8 +179,8 @@
   background-color: #f5f7f7;
 }
 
-
 /* 进度条 */
+
 .sk-three-bounce {
   margin: 20rpx auto;
   width: 200rpx;
@@ -220,8 +219,6 @@
   }
 }
 
-
-
 @keyframes sk-three-bounce {
   0%, 80%, 100% {
     -webkit-transform: scale(0);
@@ -236,119 +233,113 @@
 
 /* 进度条 */
 
-
 /* 登录框 */
 
 .login-popup .zan-popup__container {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .login-popup-wrapper {
-    margin: 0 25px;
-    
+  margin: 0 25px;
 }
 
 .login-popup button {
-    background-color: transparent;
-    padding: 0;
+  background-color: transparent;
+  padding: 0;
 }
 
 .login-popup .login-inner {
-    background-color: #fff;
-    padding: 10px 15px;
-    border-radius:5px;
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
 
 .login-inner {
-    display: flex;
+  display: flex;
 }
 
 .login-inner .avatar {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  flex-shrink: 0;
 }
 
 .login-inner .close-btn {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .login-inner .username {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .login-inner .username text {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size:32rpx;
-
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 32rpx;
 }
 
 /* 弹窗按钮 */
 
 .popup-btn {
-    display: flex;
-    width: 100%;
-    height: 35px;
-    line-height: 35px;
-    font-size: 14px;
-    text-align: left;
-    border: 0;
-    border-radius: 0;
-    background-color: #fff;
+  display: flex;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  text-align: left;
+  border: 0;
+  border-radius: 0;
+  background-color: #fff;
 }
 
 .popup-btn .button-main {
-    flex-grow: 1;
-    overflow: hidden;
+  flex-grow: 1;
+  overflow: hidden;
 }
 
 .popup-btn .go-popup {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .popup-btn .go-popup image {
-    width: 15px;
-    height: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 /* 弹窗 */
 
 .login-popup .zan-popup__mask {
-    z-index: 11;
+  z-index: 11;
 }
 
 .login-popup .zan-popup__container {
-    z-index: 12;
+  z-index: 12;
 }
 
 .zan-popup .zan-popup__container {
-    width: 100%;
-    overflow: visible;
-  
-
+  width: 100%;
+  overflow: visible;
 }
 
 .zan-popup .popup-wrapper {
-    width: 100%;
-    padding: 0 15px;
-    padding-bottom: 10px;
-    overflow: visible;
-    
+  width: 100%;
+  padding: 0 15px;
+  padding-bottom: 10px;
+  overflow: visible;
 }
 
 .zan-popup .popup-wrapper .popup-title {
-    font-size: 16px;
-    padding: 15px 0;
+  font-size: 16px;
+  padding: 15px 0;
 }
 
 .zan-popup .btn-primary.confirm {
-    height: 50px;
-    line-height: 50px;
-    border-radius: 0;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 0;
 }

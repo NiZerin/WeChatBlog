@@ -31,7 +31,7 @@ import {
 
 Page({
   data: {
-    condition:false,
+    condition: false,
     title: '文章内容',
     detail: {},
     commentsList: [],
@@ -397,8 +397,8 @@ Page({
       })
       .catch(function(error) {
         self.setData({
-          condition:true,
-          displayLike:"none"
+          condition: true,
+          displayLike: "none"
         })
         console.log('error: ' + error);
       })

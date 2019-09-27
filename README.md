@@ -95,7 +95,7 @@ https://github.com/NiZerin/WeChatBlog/archive/master.zip
 
 #### 查看更新日志：
 
-[CHANGELOG.md](https://github.com/CrazyNing98/WeChatMiniProgram-Blog/blob/master/CHANGELOG.md)
+[CHANGELOG.md](https://github.com/NiZerin/WeChatBlog/blob/master/CHANGELOG.md)
 
 
 
@@ -113,7 +113,7 @@ https://github.com/NiZerin/WeChatBlog/archive/master.zip
 
 守望轩 小程序框架
 
-wxParse丶ZanUI丶VantuUI
+wxParse丶ZanUI丶VantUI
 
 
 

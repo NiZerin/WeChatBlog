@@ -1,66 +1,57 @@
 {
-    "pages": [
-        "pages/index/index",
-        "pages/detail/detail",
-        "pages/logs/logs",
-        "pages/page/page",
-        "pages/about/about",
-        "pages/list/list",
-        "pages/topic/topic",
-        "pages/readlog/readlog",
-        "pages/hot/hot",
-        "pages/pay/pay",
-        "pages/webpage/webpage",
-        "pages/comments/comments",
-        "pages/poster/poster",
-        "pages/user/user"
-    ],
-    "window": {
-        "backgroundTextStyle": "dark",
-        "navigationBarBackgroundColor": "#6082BB",
-        "navigationBarTitleText": "PHP开源Hub",
-        "navigationBarTextStyle": "white"
-    },
-    "tabBar": {
-        "color": "#9BABBA",
-        "selectedColor": "#6082BB",
-        "borderStyle": "white",
-        "backgroundColor": "#ffffff",
-        "list": [
-            {
-                "pagePath": "pages/index/index",
-                "iconPath": "images/tar-home.png",
-                "selectedIconPath": "images/tar-home-on.png",
-                "text": "首页"
-            },
-            {
-                "pagePath": "pages/topic/topic",
-                "iconPath": "images/tar-topic.png",
-                "selectedIconPath": "images/tar-topic-on.png",
-                "text": "专栏"
-            },
-            {
-                "pagePath": "pages/user/user",
-                "iconPath": "images/tar-person.png",
-                "selectedIconPath": "images/tar-person-on.png",
-                "text": "我的"
-            }
-        ]
-    },
-    "networkTimeout": {
-        "request": 10000,
-        "connectSocket": 10000,
-        "uploadFile": 10000,
-        "downloadFile": 10000
-    },
-    "navigateToMiniProgramAppIdList":
-    [
-         
-        "wxa43aaa8416cdbd61",
-        "wxe9440e3d24b04152",
-        "wx39075d0bde24f9f7",
-        "wxc1771b619b83316b",
-        "wx074a216a7aabc30c",
-        "wx55ea6098e41af5c4"
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/logs/logs",
+    "pages/page/page",
+    "pages/about/about",
+    "pages/list/list",
+    "pages/topic/topic",
+    "pages/readlog/readlog",
+    "pages/hot/hot",
+    "pages/pay/pay",
+    "pages/webpage/webpage",
+    "pages/comments/comments",
+    "pages/poster/poster",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#6082BB",
+    "navigationBarTitleText": "PHP开源Hub",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#9BABBA",
+    "selectedColor": "#6082BB",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tar-home.png",
+        "selectedIconPath": "images/tar-home-on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/topic/topic",
+        "iconPath": "images/tar-topic.png",
+        "selectedIconPath": "images/tar-topic-on.png",
+        "text": "专栏"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/tar-person.png",
+        "selectedIconPath": "images/tar-person-on.png",
+        "text": "我的"
+      }
     ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "sitemapLocation": "sitemap97.json"
 }
