@@ -20,23 +20,23 @@ import config from '../../utils/config.js'
 
 var app = getApp();
 Page({
-  data: {    
+  data: {
     prices: [
-      6, 8, 18, 66, 88,188
+      6, 8, 18, 66, 88, 188
     ],
-    openid:'',
-    postid:'',
-    total_fee:'',
+    openid: '',
+    postid: '',
+    total_fee: '',
     template_id: config.getPayTemplateId,
-    flag:'1'
+    flag: '1'
   },
 
   /**
    * 进入页面
    */
-  onLoad: function (options) { 
+  onLoad: function(options) {
 
-    var that=this;
+    var that = this;
 
     var openid = options.openid;
     var postid = options.postid;
@@ -45,12 +45,11 @@ Page({
     that.setData({
       openid: openid,
       postid: postid,
-      flag:flag
-        });
+      flag: flag
+    });
 
   },
-  cancel:function()
-  {
+  cancel: function() {
     wx.navigateBack({
       delta: 1
     })
@@ -60,11 +59,11 @@ Page({
   /**
    * 选中鼓励金额
    */
-  selectItem: function (event) {
+  selectItem: function(event) {
     var totalfee = event.currentTarget.dataset.item;
-    var money = totalfee ;
+    var money = totalfee;
     totalfee = totalfee;
-    var that = this;    
+    var that = this;
     var url = Api.postPraiseUrl();
     var data = {
       openid: that.data.openid,
@@ -72,89 +71,85 @@ Page({
     }
     var postPraiseRequest = wxRequest.postRequest(url, data);
     postPraiseRequest.then(response => {
-        if (response.data) {
-          var temp = response.data;
-          wx.requestPayment({
-            'timeStamp': response.data.timeStamp,
-            'nonceStr': response.data.nonceStr,
-            'package': response.data.package,
-            'signType': 'MD5',
-            'paySign': response.data.paySign,
-            'success': function (res) {
-              var url = Api.updatePraiseUrl();
-              var data ={
-                openid: that.data.openid,
-                postid: that.data.postid,
-                orderid: response.data.nonceStr,
-                money: totalfee
-              }
-              var form_id = response.data.package;
-              form_id = form_id.substring(10);              
-              var updatePraiseRequest = wxRequest.postRequest(url, data); //更新鼓励数据
-              updatePraiseRequest.then(response => {
-                  console.log(response.data.message);
-                })
+      if (response.data) {
+        var temp = response.data;
+        wx.requestPayment({
+          'timeStamp': response.data.timeStamp,
+          'nonceStr': response.data.nonceStr,
+          'package': response.data.package,
+          'signType': 'MD5',
+          'paySign': response.data.paySign,
+          'success': function(res) {
+            var url = Api.updatePraiseUrl();
+            var data = {
+              openid: that.data.openid,
+              postid: that.data.postid,
+              orderid: response.data.nonceStr,
+              money: totalfee
+            }
+            var form_id = response.data.package;
+            form_id = form_id.substring(10);
+            var updatePraiseRequest = wxRequest.postRequest(url, data); //更新鼓励数据
+            updatePraiseRequest.then(response => {
+                console.log(response.data.message);
+              })
               .then(res => {
-                  wx.showToast({
-                    title: '谢谢鼓励！',
-                    uration: 2000,
-                    success: function () {
-                        data =
-                            {
-                                openid: that.data.openid,
-                                postid: that.data.postid,
-                                template_id: that.data.template_id,
-                                form_id: form_id,
-                                total_fee: money,
-                                flag: that.data.flag
-                            };
-                        url = Api.sendMessagesUrl();
-                        var sendMessageRequest = wxRequest.postRequest(url, data);
-                        sendMessageRequest.then(response => {
-                            if (response.data.status == '200') {
-                                console.log(response.data.message);
-                                wx.navigateBack({
-                                    delta: 1
-                                })
+                wx.showToast({
+                  title: '谢谢鼓励！',
+                  uration: 2000,
+                  success: function() {
+                    data = {
+                      openid: that.data.openid,
+                      postid: that.data.postid,
+                      template_id: that.data.template_id,
+                      form_id: form_id,
+                      total_fee: money,
+                      flag: that.data.flag
+                    };
+                    url = Api.sendMessagesUrl();
+                    var sendMessageRequest = wxRequest.postRequest(url, data);
+                    sendMessageRequest.then(response => {
+                      if (response.data.status == '200') {
+                        console.log(response.data.message);
+                        wx.navigateBack({
+                          delta: 1
+                        })
 
-                            }
-                            else {
-                                console.log(response.data.message);
+                      } else {
+                        console.log(response.data.message);
 
-                            }
+                      }
 
-                        });
+                    });
 
-                    }
-                  });
-                })            
-              
-            },
-            'fail': function (res) {
+                  }
+                });
+              })
+
+          },
+          'fail': function(res) {
+            wx.showToast({
+              title: res.errMsg,
+              icon: 'success'
+            });
+          },
+          complete: function(res) {
+
+            if (res.errMsg == 'requestPayment:fail cancel') {
               wx.showToast({
-                title: res.errMsg,
+                title: '取消鼓励',
                 icon: 'success'
               });
-            },
-            complete: function (res) {
-
-              if (res.errMsg =='requestPayment:fail cancel')
-              {
-                wx.showToast({
-                  title: '取消鼓励',
-                  icon: 'success'
-                });
-              }
-              
             }
-          });
-        }
-        else {
-          console.log(response.data.message);
 
-        }
-       })
+          }
+        });
+      } else {
+        console.log(response.data.message);
 
-    
+      }
+    })
+
+
   }
 })

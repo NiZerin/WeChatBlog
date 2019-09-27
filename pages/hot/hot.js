@@ -30,26 +30,42 @@ Page({
     page: 1,
     search: '',
     categories: 0,
-    categoriesName:'',
-    categoriesImage:"",
-    showerror:"none",
-    isCategoryPage:"none",
-    isSearchPage:"none",
+    categoriesName: '',
+    categoriesImage: "",
+    showerror: "none",
+    isCategoryPage: "none",
+    isSearchPage: "none",
     showallDisplay: "block",
     displaySwiper: "block",
     floatDisplay: "none",
-    searchKey:"",
+    searchKey: "",
     topBarItems: [
-        // id name selected 选中状态
-        { id: '1', name: '评论数', selected: true },
-        { id: '2', name: '浏览数', selected: false },        
-        { id: '3', name: '点赞数', selected: false },
-        { id: '4', name: '鼓励数', selected: false }
+      // id name selected 选中状态
+      {
+        id: '1',
+        name: '评论数',
+        selected: true
+      },
+      {
+        id: '2',
+        name: '浏览数',
+        selected: false
+      },
+      {
+        id: '3',
+        name: '点赞数',
+        selected: false
+      },
+      {
+        id: '4',
+        name: '鼓励数',
+        selected: false
+      }
     ],
     tab: '1',
 
   },
-  formSubmit: function (e) {
+  formSubmit: function(e) {
     var url = '../list/list'
     if (e.detail.value.input != '') {
       url = url + '?search=' + e.detail.value.input;
@@ -58,27 +74,26 @@ Page({
       url: url
     })
   },
-  onShareAppMessage: function () {
-    var title = "分享“"+ config.getWebsiteName +"”的文章排行。";
-    var path ="pages/hot/hot";
+  onShareAppMessage: function() {
+    var title = "分享“" + config.getWebsiteName + "”的文章排行。";
+    var path = "pages/hot/hot";
     return {
       title: title + '-排行榜',
       path: path,
-      success: function (res) {
+      success: function(res) {
         // 转发成功
       },
-      fail: function (res) {
+      fail: function(res) {
         // 转发失败
       }
     }
   },
-  reload:function(e)
-  {
-    var self = this;   
+  reload: function(e) {
+    var self = this;
     self.fetchPostsData(self.data);
   },
 
-  onTapTag: function (e) {
+  onTapTag: function(e) {
     var self = this;
     var tab = e.currentTarget.id;
     var topBarItems = self.data.topBarItems;
@@ -91,8 +106,8 @@ Page({
       }
     }
     self.setData({
-        topBarItems: topBarItems, 
-        tab: tab
+      topBarItems: topBarItems,
+      tab: tab
 
     })
     if (tab !== 0) {
@@ -101,80 +116,79 @@ Page({
       this.fetchPostsData("1");
     }
   },
-  
-  onLoad: function (options) {
+
+  onLoad: function(options) {
     var self = this;
     this.fetchPostsData("1");
-        
+
   },
   //获取文章列表数据
-  fetchPostsData: function (tab) {
-    var self = this;  
+  fetchPostsData: function(tab) {
+    var self = this;
     self.setData({
-        postsList: []
+      postsList: []
     });
-    
+
     wx.showLoading({
       title: '正在加载',
-      mask:true
+      mask: true
     });
     var getTopHotPostsRequest = wxRequest.getRequest(Api.getTopHotPosts(tab));
-    getTopHotPostsRequest.then(response =>{
+    getTopHotPostsRequest.then(response => {
         if (response.statusCode === 200) {
-            self.setData({
-                showallDisplay: "block",
-                floatDisplay: "block",
-                postsList: self.data.postsList.concat(response.data.map(function (item) {
-                    var strdate = item.post_date
-                    if (item.post_thumbnail_image == null || item.post_thumbnail_image == '') {
-                        item.post_thumbnail_image = '../../images/logo700.png';
-                    }
-                    item.post_date = util.cutstr(strdate, 10, 1);
-                    return item;
-                })),
+          self.setData({
+            showallDisplay: "block",
+            floatDisplay: "block",
+            postsList: self.data.postsList.concat(response.data.map(function(item) {
+              var strdate = item.post_date
+              if (item.post_thumbnail_image == null || item.post_thumbnail_image == '') {
+                item.post_thumbnail_image = '../../images/logo700.png';
+              }
+              item.post_date = util.cutstr(strdate, 10, 1);
+              return item;
+            })),
 
-            });
+          });
 
-        } else if (response.statusCode === 404) { 
+        } else if (response.statusCode === 404) {
 
-            // wx.showModal({
-            //     title: '加载失败',
-            //     content: '加载数据失败,可能缺少相应的数据',
-            //     showCancel: false,
-            // });
+          // wx.showModal({
+          //     title: '加载失败',
+          //     content: '加载数据失败,可能缺少相应的数据',
+          //     showCancel: false,
+          // });
 
-            console.log('加载数据失败,可能缺少相应的数据'); 
+          console.log('加载数据失败,可能缺少相应的数据');
         }
-    })
-    .catch(function () {
+      })
+      .catch(function() {
         wx.hideLoading();
         if (data.page == 1) {
 
-            self.setData({
-                showerror: "block",
-                floatDisplay: "block"
-            });
+          self.setData({
+            showerror: "block",
+            floatDisplay: "block"
+          });
 
+        } else {
+          // wx.showModal({
+          //     title: '加载失败',
+          //     content: '加载数据失败,请重试.',
+          //     showCancel: false,
+          // });
         }
-        else {
-            // wx.showModal({
-            //     title: '加载失败',
-            //     content: '加载数据失败,请重试.',
-            //     showCancel: false,
-            // });
-        }
-    })
-    .finally(function () {
+      })
+      .finally(function() {
 
-        setTimeout(function () {
-            wx.hideLoading();
+        setTimeout(function() {
+          wx.hideLoading();
 
         }, 1500);
 
-        });    
-  }, 
+      });
+  },
   // 跳转至查看文章详情
-  redictDetail: function (e) {
+  redictDetail: function(e) {
     // console.log('查看文章');
     var id = e.currentTarget.id,
       url = '../detail/detail?id=' + id;
@@ -185,6 +199,3 @@ Page({
 
 
 })
-
-
-

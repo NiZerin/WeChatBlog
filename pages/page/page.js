@@ -22,25 +22,27 @@ Page({
     hidden: false,
     wxParseData: []
   },
-  onLoad: function (options) {
+  onLoad: function(options) {
     this.fetchData(options.id),
       this.fetchPagesData()
   },
-  fetchData: function (id) {
+  fetchData: function(id) {
     var self = this;
     self.setData({
       hidden: false
     });
     wx.request({
-      url: Api.getPageByID(id, { mdrender: false }),
-      success: function (response) {
+      url: Api.getPageByID(id, {
+        mdrender: false
+      }),
+      success: function(response) {
         console.log(response);
         self.setData({
           pageData: response.data,
           // wxParseData: WxParse('md',response.data.content.rendered)
           wxParseData: WxParse.wxParse('article', 'html', response.data.content.rendered, self, 5)
         });
-        setTimeout(function () {
+        setTimeout(function() {
           self.setData({
             hidden: true
           });
@@ -48,15 +50,15 @@ Page({
       }
     });
   },
-  fetchPagesData: function () {
+  fetchPagesData: function() {
     var self = this;
     wx.request({
       url: Api.getPages(),
-      success: function (response) {
+      success: function(response) {
         self.setData({
           pagesList: response.data
         });
-        setTimeout(function () {
+        setTimeout(function() {
           self.setData({
             hidden: true
           });
