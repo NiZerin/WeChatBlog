@@ -1,60 +1,76 @@
 {
-	"description": "项目配置文件。",
-	"setting": {
-		"urlCheck": true,
-		"es6": true,
-		"postcss": true,
-		"minified": true,
-		"newFeature": true,
-		"nodeModules": false,
-		"autoAudits": false,
-		"uglifyFileName": true
-	},
-	"compileType": "miniprogram",
-	"libVersion": "2.6.2",
-	"appid": "wxea3b3b52ffe574f2",
-	"projectname": "PHP%E5%BC%80%E6%BA%90Hub",
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": [
-				{
-					"name": "test",
-					"pathName": "",
-					"title": "",
-					"cacheKey": ""
-				}
-			]
-		},
-		"conversation": {
-			"current": 0,
-			"list": [
-				{
-					"name": "test",
-					"query": "",
-					"boxQI": "",
-					"service": {}
-				}
-			]
-		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"list": []
-		},
-		"miniprogram": {
-			"current": 0,
-			"list": [
-				{
-					"id": -1,
-					"name": "更新模式",
-					"pathName": "pages/index/index"
-				}
-			]
-		}
-	}
+    "description": "项目配置文件。",
+    "setting": {
+        "urlCheck": true,
+        "es6": true,
+        "postcss": true,
+        "minified": true,
+        "newFeature": true,
+        "nodeModules": false,
+        "autoAudits": false,
+        "scopeDataCheck": false,
+        "uglifyFileName": true,
+        "checkInvalidKey": true,
+        "checkSiteMap": true,
+        "uploadWithSourceMap": true,
+        "compileHotReLoad": false,
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        },
+        "useIsolateContext": true,
+        "useCompilerModule": true,
+        "userConfirmedUseCompilerModuleSwitch": false,
+        "userConfirmedBundleSwitch": false,
+        "packNpmManually": false,
+        "packNpmRelationList": [],
+        "minifyWXSS": true,
+        "useMultiFrameRuntime": false,
+        "useApiHook": true,
+        "bundle": false
+    },
+    "compileType": "miniprogram",
+    "libVersion": "2.6.2",
+    "appid": "wxea3b3b52ffe574f2",
+    "projectname": "PHP%E5%BC%80%E6%BA%90Hub",
+    "simulatorType": "wechat",
+    "simulatorPluginLibVersion": {},
+    "condition": {
+        "search": {
+            "list": [
+                {
+                    "name": "test",
+                    "pathName": "",
+                    "title": "",
+                    "cacheKey": ""
+                }
+            ]
+        },
+        "conversation": {
+            "list": [
+                {
+                    "name": "test",
+                    "query": "",
+                    "boxQI": "",
+                    "service": {}
+                }
+            ]
+        },
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "id": -1,
+                    "name": "更新模式",
+                    "pathName": "pages/index/index"
+                }
+            ]
+        }
+    }
 }
