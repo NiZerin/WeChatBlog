@@ -12,7 +12,7 @@
 <template name="tempFooter"> 
   <view class="header">    
     <view>
-       © 2019 PHP开源Hub iacblog.com  proudly powered by WordPress
+       © 2021 PHP开源Hub iacblog.com  proudly powered by WordPress
     </view>
   </view>
 </template>

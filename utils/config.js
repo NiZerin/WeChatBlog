@@ -13,7 +13,7 @@
 
 //配置域名,域名只修改此处。
 //如果wordpress没有安装在网站根目录请加上目录路径,例如："www.iacblog.com"
-var DOMAIN = "www.iacblog.com";
+var DOMAIN = "blog.nizer.in";
 var MINAPPTYPE = "1"; //小程序的类型，如果是企业小程序请填：0 ，如果是个人小程序请填：1
 var WEBSITENAME = "PHP开源Hub"; //网站名称
 var ABOUTID = 188; //wordpress网站"页面"的id,注意这个"页面"是wordpress的"页面"，不是"文章"
